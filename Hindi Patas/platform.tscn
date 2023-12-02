@@ -1,0 +1,73 @@
+[gd_scene load_steps=8 format=3 uid="uid://dgcatt7fyolm6"]
+
+[ext_resource type="Script" path="res://Scenes/Levels/Platform.gd" id="1_mjqax"]
+[ext_resource type="Texture2D" uid="uid://gclswoytsbmg" path="res://Assets/Spritesheet/2x1platform.png" id="2_n3rcv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lev4p"]
+size = Vector2(128, 46)
+
+[sub_resource type="Animation" id="Animation_pqag4"]
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Platform:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -10), Vector2(0, -20)]
+}
+
+[sub_resource type="Animation" id="Animation_5yfph"]
+resource_name = "fall"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Platform:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -10), Vector2(0, 200)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_km4mk"]
+_data = {
+"RESET": SubResource("Animation_pqag4"),
+"fall": SubResource("Animation_5yfph")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2k2qa"]
+size = Vector2(243, 118)
+
+[node name="Platform" type="CharacterBody2D"]
+position = Vector2(0, -20)
+script = ExtResource("1_mjqax")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 487)
+texture = ExtResource("2_n3rcv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(576, 467)
+shape = SubResource("RectangleShape2D_lev4p")
+disabled = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_km4mk")
+}
+
+[node name="player_enter" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player_enter"]
+position = Vector2(518.5, 417)
+shape = SubResource("RectangleShape2D_2k2qa")
+
+[connection signal="body_entered" from="player_enter" to="." method="_on_player_enter_body_entered"]

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgeo2rbf02l1f"]
+
+[ext_resource type="Script" path="res://enemy.gd" id="1_8j6s2"]
+[ext_resource type="Texture2D" uid="uid://c5brbgkwtins8" path="res://kirby.png" id="1_hpvci"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6fs1o"]
+
+[node name="enemy" type="CharacterBody2D"]
+script = ExtResource("1_8j6s2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(90, -70)
+scale = Vector2(57, 57)
+shape = SubResource("CircleShape2D_6fs1o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hpvci")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+zoom = Vector2(0.1, 0.1)

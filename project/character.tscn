@@ -18,7 +18,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3w3qv"]
-size = Vector2(55.5, 53.5)
+size = Vector2(35, 53.5)
 
 [sub_resource type="Animation" id="Animation_xy78t"]
 resource_name = "Walk-right"
@@ -82,7 +82,7 @@ hframes = 5
 frame = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.25, 3.25)
+position = Vector2(1.5, 3.25)
 shape = SubResource("RectangleShape2D_3w3qv")
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="."]

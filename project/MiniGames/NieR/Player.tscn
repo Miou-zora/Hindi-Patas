@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://es0sflgmdgu7"]
+
+[ext_resource type="Script" path="res://MiniGames/NieR/Player.gd" id="1_al5xr"]
+[ext_resource type="PackedScene" uid="uid://4lptl0n52gtw" path="res://MiniGames/NieR/Projectile.tscn" id="2_lcggs"]
+
+[node name="Player" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_al5xr")
+projectile = ExtResource("2_lcggs")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+rotation = 1.5708
+polygon = PackedVector2Array(0, -40, -24, 8.00009, -2.89599e-05, -8, 24, 7.99991)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+rotation = 1.5708
+polygon = PackedVector2Array(-24, 8.00009, 0, -40, 24, 7.99991, 0, 0)
+
+[node name="ShootTimer" type="Timer" parent="."]
+wait_time = 0.15
+one_shot = true
+autostart = true
+
+[node name="TriangleBehindRight" type="Polygon2D" parent="."]
+color = Color(0.0980392, 0.0980392, 0.0980392, 1)
+polygon = PackedVector2Array(0, -7, -16, 0, 0, 7, 6, 0)
+
+[node name="LittleTriangleBehindLeft" type="Polygon2D" parent="."]
+position = Vector2(-16, 32)
+polygon = PackedVector2Array(-16, -8, -16, -16, -8, -16, -8, -8)
+
+[node name="LittleTriangleBehindRight" type="Polygon2D" parent="."]
+position = Vector2(-26, -21)
+polygon = PackedVector2Array(-6, -3, 2, -3, 2, 5, -6, 5)
+
+[node name="TriangleBehindLeft" type="Polygon2D" parent="."]
+position = Vector2(-8, 16)
+polygon = PackedVector2Array(-22, -16, 0, 8, 8, -8)
+
+[node name="LittleCircle" type="Polygon2D" parent="."]
+position = Vector2(-8, -16)
+polygon = PackedVector2Array(0, -8, -22, 16, 8, 8)
+
+[connection signal="timeout" from="ShootTimer" to="." method="_on_shoot_timer_timeout"]

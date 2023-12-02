@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://b353o15ljwye7"]
+
+[ext_resource type="Script" path="res://MiniGames/NieR/BasicEnemy.gd" id="1_oenfn"]
+
+[node name="BasicEnemy" type="Area2D"]
+script = ExtResource("1_oenfn")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(8, -16, -16, -16, -16, 16, 8, 16, 24, 0)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-16, 0)
+polygon = PackedVector2Array(0, -16, 24, -16, 40, 0, 24, 16, 0, 16)

@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://gtsjmw2kmeph"]
+
+[ext_resource type="Script" path="res://MiniGames/NieR/Game.gd" id="1_8ex6h"]
+[ext_resource type="PackedScene" uid="uid://es0sflgmdgu7" path="res://MiniGames/NieR/Player.tscn" id="1_bjg12"]
+[ext_resource type="PackedScene" uid="uid://b353o15ljwye7" path="res://MiniGames/NieR/BasicEnemy.tscn" id="3_v38gu"]
+
+[node name="Game" type="Node2D" node_paths=PackedStringArray("playerSpawn")]
+script = ExtResource("1_8ex6h")
+playerScene = ExtResource("1_bjg12")
+playerSpawn = NodePath("PlayerSpawn")
+
+[node name="BasicEnemy" parent="." instance=ExtResource("3_v38gu")]
+
+[node name="PlayerSpawn" type="Marker2D" parent="."]
+position = Vector2(608, 320)

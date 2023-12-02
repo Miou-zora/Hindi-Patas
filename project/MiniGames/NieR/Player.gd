@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var up_key: Key = KEY_UP
 @export var right_key: Key = KEY_RIGHT
 @export var left_key: Key = KEY_LEFT
-@export var shoot_key: Key = KEY_SPACE
+@export var shoot_key: MouseButton = MOUSE_BUTTON_LEFT
 
 @export var speed: int = 400
 
@@ -34,15 +34,7 @@ func move(delta):
 func _process(delta):
 	move(delta)
 	look_at(get_global_mouse_position())
-	
-func get_forward_vector():
-	var angle_radians = deg_to_rad(rotation_degrees)
-	var x = cos(angle_radians)
-	var y = sin(angle_radians)
-	return Vector2(x, y)
-	
-func _input(event):
-	if Input.is_key_pressed(shoot_key) && can_shoot:
+	if Input.is_mouse_button_pressed(shoot_key) && can_shoot:
 		var new_projectile = projectile.instantiate()
 		
 		new_projectile.set_global_position(position + get_forward_vector() * 40)
@@ -53,6 +45,16 @@ func _input(event):
 		can_shoot = false
 		
 		$ShootTimer.start()
+	
+func get_forward_vector():
+	var angle_radians = deg_to_rad(rotation_degrees)
+	var x = cos(angle_radians)
+	var y = sin(angle_radians)
+	return Vector2(x, y)
 
 func _on_shoot_timer_timeout():
 	can_shoot = true
+
+
+func _on_area_2d_area_entered(_area):
+	queue_free()

@@ -1,12 +1,14 @@
 extends Area2D
 
-var ROTATION_SPEED: int = 1
+var ROTATION_SPEED: float = 1.5
+var SPEED: int = 100
+@export var projectile_prefab: PackedScene
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
-func lookAtCharacter(delta):
+func look_at_character(delta):
 	var player = get_node("/root/Game/Player")
 	if not player:
 		return
@@ -35,5 +37,14 @@ func get_forward_vector():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	lookAtCharacter(delta)
-	
+	look_at_character(delta)
+	position += get_forward_vector() * SPEED * delta
+
+func _on_area_entered(_area):
+	queue_free()
+
+func _on_projectile_timer_timeout():
+	var projectile = projectile_prefab.instantiate()
+	projectile.set_global_position(position + get_forward_vector() * 40)
+	projectile.rotation = rotation
+	get_parent().add_child(projectile)

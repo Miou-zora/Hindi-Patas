@@ -15,6 +15,16 @@ run/main_scene="res://node_2d.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://Sprites/icon.svg"
 
+[layer_names]
+
+3d_render/layer_1="Player"
+3d_render/layer_2="Enemy"
+3d_render/layer_3="Projectile"
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Enemy"
+2d_physics/layer_3="Projectile"
+2d_physics/layer_4="EnemyProjectile"
+
 [rendering]
 
 renderer/rendering_method="mobile"

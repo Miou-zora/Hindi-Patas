@@ -103,7 +103,7 @@ editor_draw_drag_margin = true
 position = Vector2(576, 406)
 
 [node name="Coin2" parent="Coins" instance=ExtResource("3_rrh80")]
-position = Vector2(712, 353)
+position = Vector2(680.425, 353)
 
 [node name="Coin3" parent="Coins" instance=ExtResource("3_rrh80")]
 position = Vector2(844, 408)

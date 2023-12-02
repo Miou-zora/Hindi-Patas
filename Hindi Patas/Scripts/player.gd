@@ -107,3 +107,4 @@ func _on_collision_body_entered(_body):
 		AudioManager.death_sfx.play()
 		death_particles.emitting = true
 		death_tween()
+		get_tree().reload_current_scene()

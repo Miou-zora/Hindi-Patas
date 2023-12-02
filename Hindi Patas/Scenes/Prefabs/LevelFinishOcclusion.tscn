@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmvj34eln27v8"]
+
+[ext_resource type="Script" path="res://Scenes/Prefabs/LevelFinishOcclusion.gd" id="1_vgrxu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_34g1n"]
+size = Vector2(60, 80)
+
+[node name="LevelFinishDoor" type="Area2D"]
+script = ExtResource("1_vgrxu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 8)
+shape = SubResource("RectangleShape2D_34g1n")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

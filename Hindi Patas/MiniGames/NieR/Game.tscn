@@ -1,0 +1,251 @@
+[gd_scene load_steps=8 format=3 uid="uid://gtsjmw2kmeph"]
+
+[ext_resource type="Script" path="res://MiniGames/NieR/Game.gd" id="1_8ex6h"]
+[ext_resource type="PackedScene" uid="uid://es0sflgmdgu7" path="res://MiniGames/NieR/Player.tscn" id="1_bjg12"]
+[ext_resource type="PackedScene" uid="uid://b353o15ljwye7" path="res://MiniGames/NieR/BasicEnemy.tscn" id="3_v38gu"]
+[ext_resource type="PackedScene" uid="uid://cjanwm3sy2x37" path="res://Scenes/Levels/Level_01.tscn" id="4_2nc2b"]
+[ext_resource type="Script" path="res://MiniGames/NieR/EnemyWaves.gd" id="4_sbueo"]
+[ext_resource type="Script" path="res://MiniGames/NieR/Wave.gd" id="5_mhxpj"]
+[ext_resource type="Script" path="res://MiniGames/NieR/SpawnEnemy.gd" id="6_2dioo"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_8ex6h")
+playerScene = ExtResource("1_bjg12")
+
+[node name="EnemyWaves" type="Node2D" parent="."]
+position = Vector2(663, 371)
+script = ExtResource("4_sbueo")
+next_scene = ExtResource("4_2nc2b")
+
+[node name="WaveOne" type="Node2D" parent="EnemyWaves"]
+script = ExtResource("5_mhxpj")
+
+[node name="Timer" type="Timer" parent="EnemyWaves/WaveOne"]
+one_shot = true
+
+[node name="EnemiesSetup" type="Node2D" parent="EnemyWaves/WaveOne"]
+
+[node name="5" type="Node2D" parent="EnemyWaves/WaveOne/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveOne/EnemiesSetup/5"]
+position = Vector2(391, -54)
+rotation = 3.09447
+
+[node name="4" type="Node2D" parent="EnemyWaves/WaveOne/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveOne/EnemiesSetup/4"]
+position = Vector2(-397, 127)
+rotation = -0.55676
+
+[node name="3" type="Node2D" parent="EnemyWaves/WaveOne/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveOne/EnemiesSetup/3"]
+position = Vector2(319, 143)
+rotation = -2.84838
+
+[node name="1" type="Node2D" parent="EnemyWaves/WaveOne/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveOne/EnemiesSetup/1"]
+position = Vector2(290, -260)
+rotation = 2.47662
+
+[node name="2" type="Node2D" parent="EnemyWaves/WaveOne/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveOne/EnemiesSetup/2"]
+position = Vector2(-368, -236)
+rotation = 0.74351
+
+[node name="WaveTwo" type="Node2D" parent="EnemyWaves"]
+script = ExtResource("5_mhxpj")
+
+[node name="Timer" type="Timer" parent="EnemyWaves/WaveTwo"]
+wait_time = 3.0
+one_shot = true
+
+[node name="EnemiesSetup" type="Node2D" parent="EnemyWaves/WaveTwo"]
+
+[node name="5" type="Node2D" parent="EnemyWaves/WaveTwo/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveTwo/EnemiesSetup/5"]
+position = Vector2(391, -54)
+rotation = 3.09447
+
+[node name="4" type="Node2D" parent="EnemyWaves/WaveTwo/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveTwo/EnemiesSetup/4"]
+position = Vector2(-48, -333)
+rotation = -4.9515
+
+[node name="3" type="Node2D" parent="EnemyWaves/WaveTwo/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveTwo/EnemiesSetup/3"]
+position = Vector2(319, 143)
+rotation = -2.84838
+
+[node name="1" type="Node2D" parent="EnemyWaves/WaveTwo/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveTwo/EnemiesSetup/1"]
+position = Vector2(290, -260)
+rotation = 2.47662
+
+[node name="2" type="Node2D" parent="EnemyWaves/WaveTwo/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveTwo/EnemiesSetup/2"]
+position = Vector2(-74, 239)
+rotation = -1.29852
+
+[node name="6" type="Node2D" parent="EnemyWaves/WaveTwo/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveTwo/EnemiesSetup/6"]
+position = Vector2(365, -191)
+rotation = 2.5988
+
+[node name="7" type="Node2D" parent="EnemyWaves/WaveTwo/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveTwo/EnemiesSetup/7"]
+position = Vector2(375, 60)
+rotation = -2.87805
+
+[node name="8" type="Node2D" parent="EnemyWaves/WaveTwo/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveTwo/EnemiesSetup/8"]
+position = Vector2(417, 146)
+rotation = -2.84838
+
+[node name="9" type="Node2D" parent="EnemyWaves/WaveTwo/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveTwo/EnemiesSetup/9"]
+position = Vector2(436, -133)
+rotation = 2.9723
+
+[node name="10" type="Node2D" parent="EnemyWaves/WaveTwo/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveTwo/EnemiesSetup/10"]
+position = Vector2(410, -284)
+rotation = -3.89907
+
+[node name="WaveThree" type="Node2D" parent="EnemyWaves"]
+script = ExtResource("5_mhxpj")
+
+[node name="Timer" type="Timer" parent="EnemyWaves/WaveThree"]
+wait_time = 10.0
+one_shot = true
+
+[node name="EnemiesSetup" type="Node2D" parent="EnemyWaves/WaveThree"]
+
+[node name="5" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/5"]
+position = Vector2(391, -54)
+rotation = 3.09447
+
+[node name="4" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/4"]
+position = Vector2(-48, -333)
+rotation = -4.9515
+
+[node name="3" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/3"]
+position = Vector2(319, 143)
+rotation = -2.84838
+
+[node name="1" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/1"]
+position = Vector2(290, -260)
+rotation = 2.47662
+
+[node name="2" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/2"]
+position = Vector2(-74, 239)
+rotation = -1.29852
+
+[node name="6" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/6"]
+position = Vector2(365, -191)
+rotation = 2.5988
+
+[node name="7" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/7"]
+position = Vector2(375, 60)
+rotation = -2.87805
+
+[node name="8" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/8"]
+position = Vector2(417, 146)
+rotation = -2.84838
+
+[node name="9" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/9"]
+position = Vector2(436, -133)
+rotation = 2.9723
+
+[node name="10" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/10"]
+position = Vector2(410, -284)
+rotation = -3.89907
+
+[node name="PlayerSpawn" type="Marker2D" parent="."]
+position = Vector2(652, 274)
+
+[connection signal="timeout" from="EnemyWaves/WaveOne/Timer" to="EnemyWaves/WaveOne" method="_on_timer_timeout"]
+[connection signal="timeout" from="EnemyWaves/WaveTwo/Timer" to="EnemyWaves/WaveTwo" method="_on_timer_timeout"]
+[connection signal="timeout" from="EnemyWaves/WaveThree/Timer" to="EnemyWaves/WaveThree" method="_on_timer_timeout"]

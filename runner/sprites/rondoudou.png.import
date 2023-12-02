@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5brbgkwtins8"
-path="res://.godot/imported/kirby.png-b0d2aa6e195327170e65c22d60064c6d.ctex"
+uid="uid://cdtrfeia7nlet"
+path="res://.godot/imported/rondoudou.png-72f851551caa0f25603613d4a86fde03.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kirby.png"
-dest_files=["res://.godot/imported/kirby.png-b0d2aa6e195327170e65c22d60064c6d.ctex"]
+source_file="res://sprites/rondoudou.png"
+dest_files=["res://.godot/imported/rondoudou.png-72f851551caa0f25603613d4a86fde03.ctex"]
 
 [params]
 

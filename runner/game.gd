@@ -29,7 +29,7 @@ func move_enemy(enemy, game_over, delta, gravity, win):
 		enemy.velocity.y += gravity * delta
 	if target.y < 0:
 		enemy.velocity.y = target.y * 2000
-	enemy.velocity.x = target.x * 2100
+	enemy.velocity.x = target.x * 2200
 	var temp = enemy.position.x
 	enemy.move_and_slide()
 	if enemy.position.x > 74000:
@@ -71,7 +71,7 @@ func _process(delta):
 		$press_r.text = ""		
 		game_over = 0
 	if $player.position.x > 74400:
-		pos.x -= 2000
+		pos.x -= 2200
 		pos.y += 500
 		$you_win.text = "YOU WIN"
 		$you_win.set_position(pos)

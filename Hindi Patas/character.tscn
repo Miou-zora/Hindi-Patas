@@ -1,0 +1,91 @@
+[gd_scene load_steps=8 format=3 uid="uid://c86tuopraihrx"]
+
+[ext_resource type="Script" path="res://character.gd" id="1_jg740"]
+[ext_resource type="Texture2D" uid="uid://cfbtix7imkxca" path="res://jo.png" id="2_gqggb"]
+[ext_resource type="Texture2D" uid="uid://brkdrij62yoq" path="res://light.jpg" id="3_qheat"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_foqev"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"MainPC",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3w3qv"]
+size = Vector2(35, 53.5)
+
+[sub_resource type="Animation" id="Animation_xy78t"]
+resource_name = "Walk-right"
+length = 3.7
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.8, 1.6, 2.5, 3.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 3, 4, 1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3hlkx"]
+_data = {
+"Walk-right": SubResource("Animation_xy78t")
+}
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(148, 550)
+script = ExtResource("1_jg740")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(-2.00001, 1.99997)
+scale = Vector2(0.37854, 0.340022)
+color = Color(0.705882, 0.705882, 0, 1)
+energy = 3.13
+shadow_enabled = true
+texture = ExtResource("3_qheat")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.5, 2.75)
+scale = Vector2(0.375, 0.3725)
+sprite_frames = SubResource("SpriteFrames_foqev")
+animation = &"MainPC"
+flip_h = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1.5, -11.5)
+scale = Vector2(4.58333, 4.15)
+texture = ExtResource("2_gqggb")
+hframes = 5
+frame = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, 3.25)
+shape = SubResource("RectangleShape2D_3w3qv")
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_3hlkx")
+}

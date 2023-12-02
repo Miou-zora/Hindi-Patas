@@ -18,4 +18,4 @@ wait_time = 0.5
 
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
 [connection signal="start" from="PianoTileHUD" to="." method="new_game"]
-[connection signal="hit" from="Board" to="." method="tile_hit"]
+[connection signal="hit" from="Board" to="." method="hit_tile"]

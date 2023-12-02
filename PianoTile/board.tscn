@@ -3,38 +3,30 @@
 [ext_resource type="Script" path="res://board.gd" id="1_ynbnm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mk3tn"]
-size = Vector2(394.065, 77.9568)
+size = Vector2(262.71, 77.9568)
 
 [node name="Board" type="Area2D"]
 scale = Vector2(0.974457, 1.02622)
 script = ExtResource("1_ynbnm")
 
-[node name="FirstBoard" type="ColorRect" parent="."]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_right = 70.0
-offset_bottom = 60.0
-grow_horizontal = 2
-grow_vertical = 0
+[node name="FirstBoard" type="Polygon2D" parent="."]
+position = Vector2(492.582, 592.466)
+polygon = PackedVector2Array(-32.8387, -38.978, 32.8389, -38.978, 32.8389, 38.978, -32.8387, 38.978)
 
-[node name="SecondBoard" type="ColorRect" parent="."]
-offset_right = 70.0
-offset_bottom = 60.0
+[node name="SecondBoard" type="Polygon2D" parent="."]
+position = Vector2(558.26, 592.466)
+polygon = PackedVector2Array(-32.8389, -38.978, 32.8387, -38.978, 32.8387, 38.978, -32.8389, 38.978)
 
-[node name="ThirdBoard" type="ColorRect" parent="."]
-offset_right = 70.0
-offset_bottom = 60.0
+[node name="ThirdBoard" type="Polygon2D" parent="."]
+position = Vector2(623.937, 592.466)
+polygon = PackedVector2Array(-32.8387, -38.978, 32.8389, -38.978, 32.8389, 38.978, -32.8387, 38.978)
 
-[node name="FourthBoard" type="ColorRect" parent="."]
-offset_right = 70.0
-offset_bottom = 60.0
+[node name="FourthBoard" type="Polygon2D" parent="."]
+position = Vector2(689.615, 592.466)
+polygon = PackedVector2Array(-32.8388, -38.978, 32.8388, -38.978, 32.8388, 38.978, -32.8388, 38.978)
 
 [node name="FirstColision" type="CollisionShape2D" parent="."]
-position = Vector2(591.099, 592.464)
-scale = Vector2(1, 1)
+position = Vector2(591.098, 592.466)
 shape = SubResource("RectangleShape2D_mk3tn")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

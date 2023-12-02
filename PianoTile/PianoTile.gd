@@ -16,7 +16,10 @@ func new_game():
 func _on_spawn_timer_timeout():
 	var tile = tile_scene.instantiate()
 	var rand = randi_range(0, 3)
-	tile.position = Vector2(screen_size.x / 2 - 143 + 74 * rand + 32, -20)
+	tile.position = Vector2(screen_size.x / 2 - 128 + 64 * rand + 32, 50)
 	tile.linear_velocity = Vector2(0.0, 250.0)
+	tile.connect("hit", tile_hit)
 	add_child(tile)
 
+func tile_hit(tile):
+	tile.queue_free()

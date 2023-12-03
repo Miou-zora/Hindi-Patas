@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://2cprlwlcetg5"]
+
+[ext_resource type="Script" path="res://MiniGames/PianoTile/Tile.gd" id="1_vh3x1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_71grx"]
+size = Vector2(64, 64)
+
+[node name="Tile" type="RigidBody2D" groups=["Tiles"]]
+input_pickable = true
+gravity_scale = 0.0
+linear_damp_mode = 1
+script = ExtResource("1_vh3x1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_71grx")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(576, 352)
+scale = Vector2(57.6, 35.2)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

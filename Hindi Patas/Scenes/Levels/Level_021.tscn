@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://d087anw2blim2" path="res://tile.png" id="1_ekxjo"]
 [ext_resource type="Texture2D" uid="uid://c5q0esbc1ii2r" path="res://50shadesofgrey.png" id="2_b43si"]
 [ext_resource type="Texture2D" uid="uid://brkdrij62yoq" path="res://light.jpg" id="3_s6s8e"]
-[ext_resource type="PackedScene" path="res://character.tscn" id="4_0oeqq"]
+[ext_resource type="PackedScene" uid="uid://c86tuopraihrx" path="res://character.tscn" id="4_0oeqq"]
 [ext_resource type="PackedScene" uid="uid://dmvj34eln27v8" path="res://Scenes/Prefabs/LevelFinishOcclusion.tscn" id="5_i54yt"]
 [ext_resource type="PackedScene" uid="uid://bjb3dx2x4bocm" path="res://Scenes/Levels/Level_022.tscn" id="6_6s238"]
 

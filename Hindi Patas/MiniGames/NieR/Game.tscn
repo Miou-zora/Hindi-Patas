@@ -254,46 +254,6 @@ enemy_prefab = ExtResource("3_v38gu")
 position = Vector2(519, -284)
 rotation = -3.89907
 
-[node name="11" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
-position = Vector2(25, 45)
-rotation = -2.69111
-script = ExtResource("6_2dioo")
-enemy_prefab = ExtResource("3_v38gu")
-
-[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/11"]
-position = Vector2(399, -260)
-rotation = 2.47662
-
-[node name="12" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
-position = Vector2(25.0001, 45)
-rotation = -2.69111
-script = ExtResource("6_2dioo")
-enemy_prefab = ExtResource("3_v38gu")
-
-[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/12"]
-position = Vector2(474, -191)
-rotation = 2.5988
-
-[node name="13" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
-position = Vector2(25.0001, 45)
-rotation = -2.69111
-script = ExtResource("6_2dioo")
-enemy_prefab = ExtResource("3_v38gu")
-
-[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/13"]
-position = Vector2(545, -133)
-rotation = 2.9723
-
-[node name="14" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
-position = Vector2(25.0001, 45)
-rotation = -2.69111
-script = ExtResource("6_2dioo")
-enemy_prefab = ExtResource("3_v38gu")
-
-[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/14"]
-position = Vector2(519, -284)
-rotation = -3.89907
-
 [node name="PlayerSpawn" type="Marker2D" parent="."]
 position = Vector2(624, 328)
 

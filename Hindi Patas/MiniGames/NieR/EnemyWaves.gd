@@ -8,5 +8,6 @@ func start():
 	$WaveThree.start()
 
 func _process(delta):
+	print($WaveOne.is_clear(), " ", $WaveTwo.is_clear(), " ", $WaveThree.is_clear())
 	if $WaveOne.is_clear() && $WaveTwo.is_clear() && $WaveThree.is_clear():
 		SceneTransition.load_scene(load(next_scene))

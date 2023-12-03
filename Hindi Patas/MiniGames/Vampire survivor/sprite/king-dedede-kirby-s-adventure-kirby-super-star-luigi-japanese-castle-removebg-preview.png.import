@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cl01xmsdwo7v2"
-path="res://.godot/imported/Icon.png-33e63688031d53466d4d656c73cf10ca.ctex"
+uid="uid://ckh36jgpiw1g2"
+path="res://.godot/imported/king-dedede-kirby-s-adventure-kirby-super-star-luigi-japanese-castle-removebg-preview.png-c27375f0bf7d73114184e564b99ce592.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Icon.png"
-dest_files=["res://.godot/imported/Icon.png-33e63688031d53466d4d656c73cf10ca.ctex"]
+source_file="res://MiniGames/Vampire survivor/sprite/king-dedede-kirby-s-adventure-kirby-super-star-luigi-japanese-castle-removebg-preview.png"
+dest_files=["res://.godot/imported/king-dedede-kirby-s-adventure-kirby-super-star-luigi-japanese-castle-removebg-preview.png-c27375f0bf7d73114184e564b99ce592.ctex"]
 
 [params]
 

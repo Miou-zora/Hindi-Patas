@@ -1,0 +1,4029 @@
+[gd_scene load_steps=4 format=3 uid="uid://di711x8ofoi6r"]
+
+[ext_resource type="PackedScene" uid="uid://dkjjm2wvopmak" path="res://MiniGames/Vampire survivor/main.tscn" id="1_03r4o"]
+[ext_resource type="Texture2D" uid="uid://jk4vipek5dcw" path="res://MiniGames/Vampire survivor/sprite/hqdefault.jpg" id="1_vq4is"]
+[ext_resource type="PackedScene" uid="uid://dr528kgpwxyey" path="res://MiniGames/Vampire survivor/enemy.tscn" id="3_02bwr"]
+
+[node name="Vampire" type="Node2D"]
+position = Vector2(-1, 0)
+
+[node name="background" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(-410, -514)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background2" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(831, -514)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background3" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(-410, 411)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background4" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(831, 411)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background5" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(-2891, -508)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background6" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(-1650, -508)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background7" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(-2891, 417)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background8" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(-1650, 417)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background9" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(-403, -2381)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background10" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(838, -2381)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background11" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(-412, -1439)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background12" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(823, -1444)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background13" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(-2884, -2375)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background14" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(-1643, -2375)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background15" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(-2879, -1438)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background16" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(-1651, -1443)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background17" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(4556, -514)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background18" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(5797, -514)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background19" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(4556, 411)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background20" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(5797, 411)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background21" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(2075, -508)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background22" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(3316, -508)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background23" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(2075, 417)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background24" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(3316, 417)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background25" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(4563, -2381)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background26" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(5804, -2381)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background27" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(4547, -1447)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background28" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(5775, -1446)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background29" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(2082, -2375)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background30" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(3323, -2375)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background31" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(2067, -1439)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="background32" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(3308, -1438)
+scale = Vector2(0.566029, 0.565401)
+texture = ExtResource("1_vq4is")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 2196.64, 1659.62)
+
+[node name="main" parent="." instance=ExtResource("1_03r4o")]
+texture_filter = 1
+
+[node name="enemy" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-106, 151)
+
+[node name="enemy2" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(205, -11)
+
+[node name="enemy3" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-114, -67)
+
+[node name="enemy4" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(118, -14)
+
+[node name="enemy5" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(159, 113)
+
+[node name="enemy6" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-185, 134)
+
+[node name="enemy7" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-114, 396)
+
+[node name="enemy8" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-157, 298)
+
+[node name="enemy9" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-173, -34)
+
+[node name="enemy10" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(107, 219)
+
+[node name="enemy11" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-117, 227)
+
+[node name="enemy12" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-10, -242)
+
+[node name="enemy13" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(73, 153)
+
+[node name="enemy14" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(225, 53)
+
+[node name="enemy15" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-56, -181)
+
+[node name="enemy16" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-51, -83)
+
+[node name="enemy17" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(159, 251)
+
+[node name="enemy18" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-139, 48)
+
+[node name="enemy19" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-377, 188)
+
+[node name="enemy20" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(353, 630)
+
+[node name="enemy21" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(173, -99)
+
+[node name="enemy22" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(53, -227)
+
+[node name="enemy23" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(114, -207)
+
+[node name="enemy24" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(156, -169)
+
+[node name="enemy25" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(241, 260)
+
+[node name="enemy26" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(317, 269)
+
+[node name="enemy27" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-208, -578)
+
+[node name="enemy28" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(483, 46)
+
+[node name="enemy49" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-538, 158)
+
+[node name="enemy50" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-493, 200)
+
+[node name="enemy51" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-46, 643)
+
+[node name="enemy52" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-121, 619)
+
+[node name="enemy53" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-463, 196)
+
+[node name="enemy54" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-183, 449)
+
+[node name="enemy29" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(379, 234)
+
+[node name="enemy30" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(390, -343)
+
+[node name="enemy31" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(419, 66)
+
+[node name="enemy32" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1103, 545)
+
+[node name="enemy33" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(359, -263)
+
+[node name="enemy34" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(325, -203)
+
+[node name="enemy35" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(618, 36)
+
+[node name="enemy36" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(237, -72)
+
+[node name="enemy37" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-58, 268)
+
+[node name="enemy38" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(426, 354)
+
+[node name="enemy39" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(549, -219)
+
+[node name="enemy40" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(452, -330)
+
+[node name="enemy41" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(504, -312)
+
+[node name="enemy42" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(549, -270)
+
+[node name="enemy43" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-497, -50)
+
+[node name="enemy44" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-57, 343)
+
+[node name="enemy45" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-413, -267)
+
+[node name="enemy46" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-510, -378)
+
+[node name="enemy47" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-458, -360)
+
+[node name="enemy48" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-413, -318)
+
+[node name="enemy55" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(752, -70)
+
+[node name="enemy56" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(57, 669)
+
+[node name="enemy57" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(990, 272)
+
+[node name="enemy58" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(739, -398)
+
+[node name="enemy59" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(791, -380)
+
+[node name="enemy60" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(836, -338)
+
+[node name="enemy61" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(461, 396)
+
+[node name="enemy62" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(401, 585)
+
+[node name="enemy63" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(396, 306)
+
+[node name="enemy64" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(655, 37)
+
+[node name="enemy65" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(707, 55)
+
+[node name="enemy66" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(752, 97)
+
+[node name="enemy73" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(983, 79)
+
+[node name="enemy74" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1035, 97)
+
+[node name="enemy75" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1080, 139)
+
+[node name="enemy76" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(965, 347)
+
+[node name="enemy77" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1017, 365)
+
+[node name="enemy78" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1062, 407)
+
+[node name="enemy79" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(881, 655)
+
+[node name="enemy80" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(933, 673)
+
+[node name="enemy81" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(978, 715)
+
+[node name="enemy82" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-815, 429)
+
+[node name="enemy83" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-763, 447)
+
+[node name="enemy84" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-718, 489)
+
+[node name="enemy85" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-843, 605)
+
+[node name="enemy86" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-791, 623)
+
+[node name="enemy87" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-746, 665)
+
+[node name="enemy88" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-833, 517)
+
+[node name="enemy89" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-781, 535)
+
+[node name="enemy90" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-736, 577)
+
+[node name="enemy91" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-857, 929)
+
+[node name="enemy92" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-805, 947)
+
+[node name="enemy93" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-760, 989)
+
+[node name="enemy94" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-885, 1105)
+
+[node name="enemy95" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-833, 1123)
+
+[node name="enemy96" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-788, 1165)
+
+[node name="enemy97" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-875, 1017)
+
+[node name="enemy98" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-823, 1035)
+
+[node name="enemy99" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-778, 1077)
+
+[node name="enemy100" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-259, 1077)
+
+[node name="enemy101" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-207, 1095)
+
+[node name="enemy102" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-162, 1137)
+
+[node name="enemy103" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-287, 1253)
+
+[node name="enemy104" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-235, 1271)
+
+[node name="enemy105" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-190, 1313)
+
+[node name="enemy106" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-277, 1165)
+
+[node name="enemy107" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-225, 1183)
+
+[node name="enemy108" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-180, 1225)
+
+[node name="enemy109" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-593, 1195)
+
+[node name="enemy110" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-541, 1213)
+
+[node name="enemy111" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-496, 1255)
+
+[node name="enemy112" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-621, 1371)
+
+[node name="enemy113" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-569, 1389)
+
+[node name="enemy225" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2595, 103)
+
+[node name="enemy226" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2640, 145)
+
+[node name="enemy227" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2519, 497)
+
+[node name="enemy228" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2571, 515)
+
+[node name="enemy229" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2616, 557)
+
+[node name="enemy230" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2491, 673)
+
+[node name="enemy231" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2543, 691)
+
+[node name="enemy232" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2588, 733)
+
+[node name="enemy233" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2501, 585)
+
+[node name="enemy234" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2553, 603)
+
+[node name="enemy235" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2598, 645)
+
+[node name="enemy236" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3117, 645)
+
+[node name="enemy237" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3169, 663)
+
+[node name="enemy238" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3214, 705)
+
+[node name="enemy239" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3089, 821)
+
+[node name="enemy240" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3141, 839)
+
+[node name="enemy241" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3186, 881)
+
+[node name="enemy242" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3099, 733)
+
+[node name="enemy243" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3151, 751)
+
+[node name="enemy244" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3196, 793)
+
+[node name="enemy245" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2835, 781)
+
+[node name="enemy246" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2880, 823)
+
+[node name="enemy247" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2755, 939)
+
+[node name="enemy248" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2807, 957)
+
+[node name="enemy249" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2067, 1263)
+
+[node name="enemy250" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2112, 1305)
+
+[node name="enemy251" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1991, 1657)
+
+[node name="enemy252" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2043, 1675)
+
+[node name="enemy253" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2088, 1717)
+
+[node name="enemy254" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1963, 1833)
+
+[node name="enemy255" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2015, 1851)
+
+[node name="enemy256" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2060, 1893)
+
+[node name="enemy257" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1973, 1745)
+
+[node name="enemy258" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2025, 1763)
+
+[node name="enemy259" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2070, 1805)
+
+[node name="enemy260" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2589, 1805)
+
+[node name="enemy261" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2641, 1823)
+
+[node name="enemy262" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2686, 1865)
+
+[node name="enemy263" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2561, 1981)
+
+[node name="enemy264" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2613, 1999)
+
+[node name="enemy265" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2658, 2041)
+
+[node name="enemy266" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2571, 1893)
+
+[node name="enemy267" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2623, 1911)
+
+[node name="enemy268" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2668, 1953)
+
+[node name="enemy269" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2307, 1941)
+
+[node name="enemy270" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2352, 1983)
+
+[node name="enemy271" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2227, 2099)
+
+[node name="enemy272" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2279, 2117)
+
+[node name="enemy273" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2069, -1321)
+
+[node name="enemy274" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2024, -1279)
+
+[node name="enemy275" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2145, -927)
+
+[node name="enemy276" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2093, -909)
+
+[node name="enemy277" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2048, -867)
+
+[node name="enemy278" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2173, -751)
+
+[node name="enemy279" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2121, -733)
+
+[node name="enemy280" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2076, -691)
+
+[node name="enemy281" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2163, -839)
+
+[node name="enemy282" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2111, -821)
+
+[node name="enemy283" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2066, -779)
+
+[node name="enemy284" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1547, -779)
+
+[node name="enemy285" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1495, -761)
+
+[node name="enemy286" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1450, -719)
+
+[node name="enemy287" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1575, -603)
+
+[node name="enemy288" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1523, -585)
+
+[node name="enemy289" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1478, -543)
+
+[node name="enemy290" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1565, -691)
+
+[node name="enemy291" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1513, -673)
+
+[node name="enemy292" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1468, -631)
+
+[node name="enemy293" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1829, -643)
+
+[node name="enemy294" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1784, -601)
+
+[node name="enemy295" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1909, -485)
+
+[node name="enemy296" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1857, -467)
+
+[node name="enemy297" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3021, -985)
+
+[node name="enemy298" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2976, -943)
+
+[node name="enemy299" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3097, -591)
+
+[node name="enemy300" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3045, -573)
+
+[node name="enemy301" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3000, -531)
+
+[node name="enemy302" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3125, -415)
+
+[node name="enemy303" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3073, -397)
+
+[node name="enemy304" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3038, -365)
+
+[node name="enemy305" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3115, -503)
+
+[node name="enemy306" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3063, -485)
+
+[node name="enemy307" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3018, -443)
+
+[node name="enemy719" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2462, -1646)
+
+[node name="enemy720" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2410, -1628)
+
+[node name="enemy721" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2365, -1586)
+
+[node name="enemy722" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2490, -1470)
+
+[node name="enemy723" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2438, -1452)
+
+[node name="enemy724" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2393, -1410)
+
+[node name="enemy725" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2480, -1558)
+
+[node name="enemy726" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2428, -1540)
+
+[node name="enemy727" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2383, -1498)
+
+[node name="enemy728" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1809, -1910)
+
+[node name="enemy729" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1757, -1892)
+
+[node name="enemy730" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1712, -1850)
+
+[node name="enemy731" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1837, -1734)
+
+[node name="enemy732" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1785, -1716)
+
+[node name="enemy733" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1740, -1674)
+
+[node name="enemy734" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1827, -1822)
+
+[node name="enemy735" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1775, -1804)
+
+[node name="enemy736" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1730, -1762)
+
+[node name="enemy737" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1204, -2078)
+
+[node name="enemy738" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1152, -2060)
+
+[node name="enemy739" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1107, -2018)
+
+[node name="enemy740" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1232, -1902)
+
+[node name="enemy741" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1180, -1884)
+
+[node name="enemy742" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1135, -1842)
+
+[node name="enemy743" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1222, -1990)
+
+[node name="enemy744" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1170, -1972)
+
+[node name="enemy745" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1125, -1930)
+
+[node name="enemy746" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-952, -1772)
+
+[node name="enemy747" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-900, -1754)
+
+[node name="enemy748" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-855, -1712)
+
+[node name="enemy749" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-980, -1596)
+
+[node name="enemy750" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-928, -1578)
+
+[node name="enemy751" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-883, -1536)
+
+[node name="enemy752" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-970, -1684)
+
+[node name="enemy753" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-918, -1666)
+
+[node name="enemy754" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-873, -1624)
+
+[node name="enemy755" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-550, -1664)
+
+[node name="enemy756" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-498, -1646)
+
+[node name="enemy757" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-453, -1604)
+
+[node name="enemy758" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-578, -1488)
+
+[node name="enemy759" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-526, -1470)
+
+[node name="enemy760" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-481, -1428)
+
+[node name="enemy761" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-568, -1576)
+
+[node name="enemy762" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-516, -1558)
+
+[node name="enemy763" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-471, -1516)
+
+[node name="enemy764" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(79, -1820)
+
+[node name="enemy765" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(131, -1802)
+
+[node name="enemy766" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(176, -1760)
+
+[node name="enemy767" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(51, -1644)
+
+[node name="enemy768" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(103, -1626)
+
+[node name="enemy769" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(148, -1584)
+
+[node name="enemy770" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(61, -1732)
+
+[node name="enemy771" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(113, -1714)
+
+[node name="enemy772" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(158, -1672)
+
+[node name="enemy773" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(678, -1880)
+
+[node name="enemy774" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(730, -1862)
+
+[node name="enemy775" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(775, -1820)
+
+[node name="enemy776" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(650, -1704)
+
+[node name="enemy777" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(702, -1686)
+
+[node name="enemy778" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(747, -1644)
+
+[node name="enemy779" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(660, -1792)
+
+[node name="enemy780" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(712, -1774)
+
+[node name="enemy781" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(757, -1732)
+
+[node name="enemy782" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1577, -1850)
+
+[node name="enemy783" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1629, -1832)
+
+[node name="enemy784" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1674, -1790)
+
+[node name="enemy785" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1549, -1674)
+
+[node name="enemy786" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1601, -1656)
+
+[node name="enemy787" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1646, -1614)
+
+[node name="enemy788" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1559, -1762)
+
+[node name="enemy789" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1611, -1744)
+
+[node name="enemy790" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1656, -1702)
+
+[node name="enemy791" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1847, -1401)
+
+[node name="enemy792" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1899, -1383)
+
+[node name="enemy793" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1944, -1341)
+
+[node name="enemy794" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1819, -1225)
+
+[node name="enemy795" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1871, -1207)
+
+[node name="enemy796" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1916, -1165)
+
+[node name="enemy797" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1829, -1313)
+
+[node name="enemy798" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1881, -1295)
+
+[node name="enemy799" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1926, -1253)
+
+[node name="enemy537" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1569, -303)
+
+[node name="enemy538" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1517, -285)
+
+[node name="enemy539" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1472, -243)
+
+[node name="enemy540" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1597, -127)
+
+[node name="enemy541" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1545, -109)
+
+[node name="enemy542" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1500, -67)
+
+[node name="enemy543" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1587, -215)
+
+[node name="enemy544" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1535, -197)
+
+[node name="enemy545" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1490, -155)
+
+[node name="enemy546" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2114, 57)
+
+[node name="enemy547" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2062, 75)
+
+[node name="enemy548" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2017, 117)
+
+[node name="enemy549" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2142, 233)
+
+[node name="enemy550" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2090, 251)
+
+[node name="enemy551" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2045, 293)
+
+[node name="enemy552" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2132, 145)
+
+[node name="enemy553" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2080, 163)
+
+[node name="enemy554" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2035, 205)
+
+[node name="enemy555" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2528, -956)
+
+[node name="enemy556" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2476, -938)
+
+[node name="enemy557" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2431, -896)
+
+[node name="enemy558" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2556, -780)
+
+[node name="enemy559" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2504, -762)
+
+[node name="enemy560" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2459, -720)
+
+[node name="enemy561" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2546, -868)
+
+[node name="enemy562" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2494, -850)
+
+[node name="enemy563" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2449, -808)
+
+[node name="enemy564" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1695, 1058)
+
+[node name="enemy565" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1643, 1076)
+
+[node name="enemy566" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1598, 1118)
+
+[node name="enemy567" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1723, 1234)
+
+[node name="enemy568" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1671, 1252)
+
+[node name="enemy569" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1626, 1294)
+
+[node name="enemy570" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1713, 1146)
+
+[node name="enemy571" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1661, 1164)
+
+[node name="enemy572" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1616, 1206)
+
+[node name="enemy573" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1587, 1579)
+
+[node name="enemy574" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1535, 1597)
+
+[node name="enemy575" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1490, 1639)
+
+[node name="enemy576" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1615, 1755)
+
+[node name="enemy577" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1563, 1773)
+
+[node name="enemy578" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1518, 1815)
+
+[node name="enemy579" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1605, 1667)
+
+[node name="enemy580" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1553, 1685)
+
+[node name="enemy581" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1508, 1727)
+
+[node name="enemy582" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2762, 15)
+
+[node name="enemy583" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2710, 33)
+
+[node name="enemy584" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2665, 75)
+
+[node name="enemy585" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2790, 191)
+
+[node name="enemy586" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2738, 209)
+
+[node name="enemy587" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2693, 251)
+
+[node name="enemy588" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2780, 103)
+
+[node name="enemy589" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2728, 121)
+
+[node name="enemy590" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2683, 163)
+
+[node name="enemy591" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3002, 626)
+
+[node name="enemy592" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2950, 644)
+
+[node name="enemy593" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2905, 686)
+
+[node name="enemy594" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3030, 802)
+
+[node name="enemy595" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2978, 820)
+
+[node name="enemy596" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2933, 862)
+
+[node name="enemy597" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3020, 714)
+
+[node name="enemy598" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2968, 732)
+
+[node name="enemy599" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2923, 774)
+
+[node name="enemy899" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3158, -2528)
+
+[node name="enemy900" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3106, -2510)
+
+[node name="enemy901" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3061, -2468)
+
+[node name="enemy902" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3186, -2352)
+
+[node name="enemy903" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3134, -2334)
+
+[node name="enemy904" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3099, -2302)
+
+[node name="enemy905" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3176, -2440)
+
+[node name="enemy906" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3124, -2422)
+
+[node name="enemy907" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3079, -2380)
+
+[node name="enemy908" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3063, -1311)
+
+[node name="enemy909" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3011, -1293)
+
+[node name="enemy910" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2966, -1251)
+
+[node name="enemy911" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3091, -1135)
+
+[node name="enemy912" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3039, -1117)
+
+[node name="enemy913" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2994, -1075)
+
+[node name="enemy914" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3081, -1223)
+
+[node name="enemy915" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3029, -1205)
+
+[node name="enemy916" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2984, -1163)
+
+[node name="enemy917" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2180, -2438)
+
+[node name="enemy918" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2135, -2396)
+
+[node name="enemy919" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2222, -2764)
+
+[node name="enemy920" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2170, -2746)
+
+[node name="enemy921" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2125, -2704)
+
+[node name="enemy922" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2250, -2588)
+
+[node name="enemy923" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2198, -2570)
+
+[node name="enemy924" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2153, -2528)
+
+[node name="enemy925" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2240, -2676)
+
+[node name="enemy926" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2188, -2658)
+
+[node name="enemy927" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2143, -2616)
+
+[node name="enemy928" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1655, -2223)
+
+[node name="enemy929" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1610, -2181)
+
+[node name="enemy930" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1697, -2549)
+
+[node name="enemy931" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1645, -2531)
+
+[node name="enemy932" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1600, -2489)
+
+[node name="enemy933" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1725, -2373)
+
+[node name="enemy934" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1673, -2355)
+
+[node name="enemy935" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1628, -2313)
+
+[node name="enemy936" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1715, -2461)
+
+[node name="enemy937" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1663, -2443)
+
+[node name="enemy938" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1618, -2401)
+
+[node name="enemy939" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2939, -1725)
+
+[node name="enemy940" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2894, -1683)
+
+[node name="enemy941" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2981, -2051)
+
+[node name="enemy942" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2929, -2033)
+
+[node name="enemy943" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2884, -1991)
+
+[node name="enemy944" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3009, -1875)
+
+[node name="enemy945" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2957, -1857)
+
+[node name="enemy946" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2912, -1815)
+
+[node name="enemy947" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2999, -1963)
+
+[node name="enemy948" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2947, -1945)
+
+[node name="enemy949" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2902, -1903)
+
+[node name="enemy950" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3822, -1438)
+
+[node name="enemy951" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3777, -1396)
+
+[node name="enemy952" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3864, -1764)
+
+[node name="enemy953" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3812, -1746)
+
+[node name="enemy954" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3767, -1704)
+
+[node name="enemy955" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3892, -1588)
+
+[node name="enemy956" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3840, -1570)
+
+[node name="enemy957" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3795, -1528)
+
+[node name="enemy958" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3882, -1676)
+
+[node name="enemy959" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3830, -1658)
+
+[node name="enemy960" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3785, -1616)
+
+[node name="enemy961" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3867, -879)
+
+[node name="enemy962" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3822, -837)
+
+[node name="enemy963" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3909, -1205)
+
+[node name="enemy964" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3857, -1187)
+
+[node name="enemy965" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3812, -1145)
+
+[node name="enemy966" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3937, -1029)
+
+[node name="enemy967" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3885, -1011)
+
+[node name="enemy968" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3840, -969)
+
+[node name="enemy969" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3927, -1117)
+
+[node name="enemy970" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3875, -1099)
+
+[node name="enemy971" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3830, -1057)
+
+[node name="enemy972" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3882, -260)
+
+[node name="enemy973" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3837, -218)
+
+[node name="enemy974" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3924, -586)
+
+[node name="enemy975" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3872, -568)
+
+[node name="enemy976" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3827, -526)
+
+[node name="enemy977" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3952, -410)
+
+[node name="enemy978" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3900, -392)
+
+[node name="enemy979" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3855, -350)
+
+[node name="enemy980" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3942, -498)
+
+[node name="enemy981" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3890, -480)
+
+[node name="enemy982" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3845, -438)
+
+[node name="enemy983" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3927, 299)
+
+[node name="enemy984" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3882, 341)
+
+[node name="enemy985" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3969, -27)
+
+[node name="enemy986" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3917, -9)
+
+[node name="enemy987" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3872, 33)
+
+[node name="enemy988" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3997, 149)
+
+[node name="enemy989" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3945, 167)
+
+[node name="enemy990" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3900, 209)
+
+[node name="enemy991" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3987, 61)
+
+[node name="enemy992" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3935, 79)
+
+[node name="enemy993" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3890, 121)
+
+[node name="enemy994" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3882, -260)
+
+[node name="enemy995" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3837, -218)
+
+[node name="enemy996" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3924, -586)
+
+[node name="enemy997" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3872, -568)
+
+[node name="enemy998" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3827, -526)
+
+[node name="enemy999" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3952, -410)
+
+[node name="enemy1000" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3900, -392)
+
+[node name="enemy1001" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3855, -350)
+
+[node name="enemy1002" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3942, -498)
+
+[node name="enemy1003" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3890, -480)
+
+[node name="enemy1004" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3845, -438)
+
+[node name="enemy1005" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3927, 299)
+
+[node name="enemy1006" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3882, 341)
+
+[node name="enemy1007" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3969, -27)
+
+[node name="enemy1008" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3917, -9)
+
+[node name="enemy1009" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3872, 33)
+
+[node name="enemy1010" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3997, 149)
+
+[node name="enemy1011" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3945, 167)
+
+[node name="enemy1012" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3900, 209)
+
+[node name="enemy1013" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3987, 61)
+
+[node name="enemy1014" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3935, 79)
+
+[node name="enemy1015" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3890, 121)
+
+[node name="enemy1016" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3618, -449)
+
+[node name="enemy1017" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3660, -775)
+
+[node name="enemy1018" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3608, -757)
+
+[node name="enemy1019" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3688, -599)
+
+[node name="enemy1020" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3636, -581)
+
+[node name="enemy1021" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3591, -539)
+
+[node name="enemy1022" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3678, -687)
+
+[node name="enemy1023" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3626, -669)
+
+[node name="enemy1024" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3581, -627)
+
+[node name="enemy1076" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-962, -3271)
+
+[node name="enemy1077" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-917, -3229)
+
+[node name="enemy1078" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-980, -3403)
+
+[node name="enemy1079" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-935, -3361)
+
+[node name="enemy1080" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1019, -2978)
+
+[node name="enemy1081" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-967, -2960)
+
+[node name="enemy1082" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-922, -2918)
+
+[node name="enemy1083" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1047, -2802)
+
+[node name="enemy1084" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-995, -2784)
+
+[node name="enemy1085" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-950, -2742)
+
+[node name="enemy1086" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1037, -2890)
+
+[node name="enemy1087" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-985, -2872)
+
+[node name="enemy1088" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-940, -2830)
+
+[node name="enemy1089" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1019, -2978)
+
+[node name="enemy1090" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-967, -2960)
+
+[node name="enemy1091" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-922, -2918)
+
+[node name="enemy1092" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1047, -2802)
+
+[node name="enemy1093" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-995, -2784)
+
+[node name="enemy1094" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-950, -2742)
+
+[node name="enemy1095" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1037, -2890)
+
+[node name="enemy1096" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-985, -2872)
+
+[node name="enemy1097" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-940, -2830)
+
+[node name="enemy1098" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-713, -2841)
+
+[node name="enemy1099" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-755, -3167)
+
+[node name="enemy1100" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-703, -3149)
+
+[node name="enemy1101" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-783, -2991)
+
+[node name="enemy1102" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-731, -2973)
+
+[node name="enemy1103" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-686, -2931)
+
+[node name="enemy1104" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-773, -3079)
+
+[node name="enemy1105" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-721, -3061)
+
+[node name="enemy1106" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-676, -3019)
+
+[node name="enemy1107" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2713, -3463)
+
+[node name="enemy1108" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2668, -3421)
+
+[node name="enemy1109" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2731, -3595)
+
+[node name="enemy1110" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2686, -3553)
+
+[node name="enemy1111" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2770, -3170)
+
+[node name="enemy1112" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2718, -3152)
+
+[node name="enemy1113" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2673, -3110)
+
+[node name="enemy1114" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2798, -2994)
+
+[node name="enemy1115" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2746, -2976)
+
+[node name="enemy1116" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2701, -2934)
+
+[node name="enemy1117" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2788, -3082)
+
+[node name="enemy1118" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2736, -3064)
+
+[node name="enemy1119" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2691, -3022)
+
+[node name="enemy1120" parent="." instance=ExtResource("3_02bwr")]
+visible = false
+position = Vector2(-2770, -3170)
+
+[node name="enemy1121" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2718, -3152)
+
+[node name="enemy1122" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2673, -3110)
+
+[node name="enemy1123" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2798, -2994)
+
+[node name="enemy1124" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2746, -2976)
+
+[node name="enemy1125" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2701, -2934)
+
+[node name="enemy1126" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2788, -3082)
+
+[node name="enemy1127" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2736, -3064)
+
+[node name="enemy1128" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2691, -3022)
+
+[node name="enemy1129" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2464, -3033)
+
+[node name="enemy1130" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2506, -3359)
+
+[node name="enemy1131" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2454, -3341)
+
+[node name="enemy1132" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2534, -3183)
+
+[node name="enemy1133" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2482, -3165)
+
+[node name="enemy1134" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2437, -3123)
+
+[node name="enemy1135" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2524, -3271)
+
+[node name="enemy1136" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2472, -3253)
+
+[node name="enemy1137" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2427, -3211)
+
+[node name="enemy1138" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(768, -3367)
+
+[node name="enemy1139" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(813, -3325)
+
+[node name="enemy1140" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(750, -3499)
+
+[node name="enemy1141" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(795, -3457)
+
+[node name="enemy1142" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(711, -3074)
+
+[node name="enemy1143" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(763, -3056)
+
+[node name="enemy1144" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(808, -3014)
+
+[node name="enemy1145" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(683, -2898)
+
+[node name="enemy1146" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(735, -2880)
+
+[node name="enemy1147" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(780, -2838)
+
+[node name="enemy1148" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(693, -2986)
+
+[node name="enemy1149" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(745, -2968)
+
+[node name="enemy1150" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(790, -2926)
+
+[node name="enemy1151" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(711, -3074)
+
+[node name="enemy1152" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(763, -3056)
+
+[node name="enemy1153" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(808, -3014)
+
+[node name="enemy1154" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(683, -2898)
+
+[node name="enemy1155" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(735, -2880)
+
+[node name="enemy1156" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(780, -2838)
+
+[node name="enemy1157" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(693, -2986)
+
+[node name="enemy1158" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(745, -2968)
+
+[node name="enemy1159" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(790, -2926)
+
+[node name="enemy1160" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1017, -2937)
+
+[node name="enemy1161" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(975, -3263)
+
+[node name="enemy1162" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1027, -3245)
+
+[node name="enemy1163" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(947, -3087)
+
+[node name="enemy1164" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(999, -3069)
+
+[node name="enemy1165" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1044, -3027)
+
+[node name="enemy1166" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(957, -3175)
+
+[node name="enemy1167" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1009, -3157)
+
+[node name="enemy1168" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1054, -3115)
+
+[node name="enemy1169" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-214, -4702)
+
+[node name="enemy1170" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-169, -4660)
+
+[node name="enemy1171" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-232, -4834)
+
+[node name="enemy1172" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-187, -4792)
+
+[node name="enemy1173" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-271, -4409)
+
+[node name="enemy1174" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-219, -4391)
+
+[node name="enemy1175" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-174, -4349)
+
+[node name="enemy1176" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-299, -4233)
+
+[node name="enemy1177" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-247, -4215)
+
+[node name="enemy1178" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-202, -4173)
+
+[node name="enemy1179" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-289, -4321)
+
+[node name="enemy1180" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-237, -4303)
+
+[node name="enemy1181" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-192, -4261)
+
+[node name="enemy1182" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-271, -4409)
+
+[node name="enemy1183" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-219, -4391)
+
+[node name="enemy1184" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-174, -4349)
+
+[node name="enemy1185" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-299, -4233)
+
+[node name="enemy1186" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-247, -4215)
+
+[node name="enemy1187" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-202, -4173)
+
+[node name="enemy1188" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-289, -4321)
+
+[node name="enemy1189" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-237, -4303)
+
+[node name="enemy1190" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-192, -4261)
+
+[node name="enemy1191" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(35, -4272)
+
+[node name="enemy1192" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-7, -4598)
+
+[node name="enemy1193" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(45, -4580)
+
+[node name="enemy1194" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-35, -4422)
+
+[node name="enemy1195" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(17, -4404)
+
+[node name="enemy1196" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(62, -4362)
+
+[node name="enemy1197" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-25, -4510)
+
+[node name="enemy1198" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(27, -4492)
+
+[node name="enemy1199" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(72, -4450)
+
+[node name="enemy1200" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2392, -3474)
+
+[node name="enemy1201" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2437, -3432)
+
+[node name="enemy1202" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2374, -3606)
+
+[node name="enemy1203" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2419, -3564)
+
+[node name="enemy1204" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2335, -3181)
+
+[node name="enemy1205" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2387, -3163)
+
+[node name="enemy1206" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2432, -3121)
+
+[node name="enemy1207" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2307, -3005)
+
+[node name="enemy1208" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2359, -2987)
+
+[node name="enemy1209" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2404, -2945)
+
+[node name="enemy1210" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2317, -3093)
+
+[node name="enemy1211" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2369, -3075)
+
+[node name="enemy1212" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2414, -3033)
+
+[node name="enemy1213" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2335, -3181)
+
+[node name="enemy1214" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2387, -3163)
+
+[node name="enemy1215" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2432, -3121)
+
+[node name="enemy1216" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2307, -3005)
+
+[node name="enemy1217" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2359, -2987)
+
+[node name="enemy1218" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2404, -2945)
+
+[node name="enemy1219" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2317, -3093)
+
+[node name="enemy1220" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2369, -3075)
+
+[node name="enemy1221" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2414, -3033)
+
+[node name="enemy1222" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2641, -3044)
+
+[node name="enemy1223" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2599, -3370)
+
+[node name="enemy1224" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2651, -3352)
+
+[node name="enemy1225" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2571, -3194)
+
+[node name="enemy1226" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2623, -3176)
+
+[node name="enemy1227" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2668, -3134)
+
+[node name="enemy1228" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2581, -3282)
+
+[node name="enemy1229" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2633, -3264)
+
+[node name="enemy1230" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2678, -3222)
+
+[node name="enemy1025" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3663, 110)
+
+[node name="enemy1026" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3618, 152)
+
+[node name="enemy1027" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3705, -216)
+
+[node name="enemy1028" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3653, -198)
+
+[node name="enemy1029" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3608, -156)
+
+[node name="enemy1030" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3733, -40)
+
+[node name="enemy1031" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3681, -22)
+
+[node name="enemy1032" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3636, 20)
+
+[node name="enemy1033" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3723, -128)
+
+[node name="enemy1034" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3671, -110)
+
+[node name="enemy1035" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3626, -68)
+
+[node name="enemy1036" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3678, 729)
+
+[node name="enemy1037" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3633, 771)
+
+[node name="enemy1038" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3720, 403)
+
+[node name="enemy1039" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3668, 421)
+
+[node name="enemy1040" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3623, 463)
+
+[node name="enemy1041" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3748, 579)
+
+[node name="enemy1042" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3696, 597)
+
+[node name="enemy1043" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3651, 639)
+
+[node name="enemy1044" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3738, 491)
+
+[node name="enemy1045" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3686, 509)
+
+[node name="enemy1046" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3641, 551)
+
+[node name="enemy1047" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3723, 1288)
+
+[node name="enemy1048" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3678, 1330)
+
+[node name="enemy1049" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3765, 962)
+
+[node name="enemy1050" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3713, 980)
+
+[node name="enemy1051" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3668, 1022)
+
+[node name="enemy1052" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3741, 1156)
+
+[node name="enemy1053" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3696, 1198)
+
+[node name="enemy1054" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3731, 1068)
+
+[node name="enemy1055" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3686, 1110)
+
+[node name="enemy1056" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3678, 729)
+
+[node name="enemy1057" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3633, 771)
+
+[node name="enemy1058" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3720, 403)
+
+[node name="enemy1059" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3668, 421)
+
+[node name="enemy1060" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3623, 463)
+
+[node name="enemy1061" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3748, 579)
+
+[node name="enemy1062" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3696, 597)
+
+[node name="enemy1063" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3651, 639)
+
+[node name="enemy1064" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3738, 491)
+
+[node name="enemy1065" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3686, 509)
+
+[node name="enemy1066" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3641, 551)
+
+[node name="enemy1067" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3723, 1288)
+
+[node name="enemy1068" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3678, 1330)
+
+[node name="enemy1069" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3765, 962)
+
+[node name="enemy1070" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3713, 980)
+
+[node name="enemy1071" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3668, 1022)
+
+[node name="enemy1072" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3741, 1156)
+
+[node name="enemy1073" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3696, 1198)
+
+[node name="enemy1074" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3731, 1068)
+
+[node name="enemy1075" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-3686, 1110)
+
+[node name="enemy308" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2499, -443)
+
+[node name="enemy309" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2447, -425)
+
+[node name="enemy310" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2402, -383)
+
+[node name="enemy311" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2527, -267)
+
+[node name="enemy312" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2475, -249)
+
+[node name="enemy313" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2430, -207)
+
+[node name="enemy314" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2517, -355)
+
+[node name="enemy315" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2465, -337)
+
+[node name="enemy316" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2420, -295)
+
+[node name="enemy317" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2781, -307)
+
+[node name="enemy318" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2736, -265)
+
+[node name="enemy319" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2861, -149)
+
+[node name="enemy320" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2809, -131)
+
+[node name="enemy321" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2701, 519)
+
+[node name="enemy322" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2656, 561)
+
+[node name="enemy323" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2777, 913)
+
+[node name="enemy324" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2725, 931)
+
+[node name="enemy325" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2680, 973)
+
+[node name="enemy326" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2805, 1089)
+
+[node name="enemy327" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2753, 1107)
+
+[node name="enemy328" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2708, 1149)
+
+[node name="enemy329" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2795, 1001)
+
+[node name="enemy330" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2743, 1019)
+
+[node name="enemy331" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2698, 1061)
+
+[node name="enemy332" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2179, 1061)
+
+[node name="enemy333" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2127, 1079)
+
+[node name="enemy334" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2082, 1121)
+
+[node name="enemy335" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2207, 1237)
+
+[node name="enemy336" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2155, 1255)
+
+[node name="enemy337" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2110, 1297)
+
+[node name="enemy338" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2197, 1149)
+
+[node name="enemy339" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2145, 1167)
+
+[node name="enemy340" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2100, 1209)
+
+[node name="enemy341" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2461, 1197)
+
+[node name="enemy342" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2416, 1239)
+
+[node name="enemy343" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2541, 1355)
+
+[node name="enemy344" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2489, 1373)
+
+[node name="enemy345" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3299, -2329)
+
+[node name="enemy346" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3344, -2287)
+
+[node name="enemy347" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3223, -1935)
+
+[node name="enemy348" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3275, -1917)
+
+[node name="enemy349" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3320, -1875)
+
+[node name="enemy350" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3195, -1759)
+
+[node name="enemy351" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3247, -1741)
+
+[node name="enemy352" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3292, -1699)
+
+[node name="enemy353" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3205, -1847)
+
+[node name="enemy354" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3257, -1829)
+
+[node name="enemy355" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3302, -1787)
+
+[node name="enemy356" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3821, -1787)
+
+[node name="enemy357" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3873, -1769)
+
+[node name="enemy358" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3918, -1727)
+
+[node name="enemy359" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3793, -1611)
+
+[node name="enemy360" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3845, -1593)
+
+[node name="enemy361" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3890, -1551)
+
+[node name="enemy362" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3803, -1699)
+
+[node name="enemy363" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3855, -1681)
+
+[node name="enemy364" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3900, -1639)
+
+[node name="enemy365" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3539, -1651)
+
+[node name="enemy366" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3584, -1609)
+
+[node name="enemy367" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3459, -1493)
+
+[node name="enemy368" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3511, -1475)
+
+[node name="enemy369" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3643, -1249)
+
+[node name="enemy370" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3688, -1207)
+
+[node name="enemy371" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3567, -855)
+
+[node name="enemy372" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3619, -837)
+
+[node name="enemy373" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3664, -795)
+
+[node name="enemy374" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3539, -679)
+
+[node name="enemy375" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3591, -661)
+
+[node name="enemy376" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3636, -619)
+
+[node name="enemy377" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3549, -767)
+
+[node name="enemy378" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3601, -749)
+
+[node name="enemy379" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3646, -707)
+
+[node name="enemy380" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4165, -707)
+
+[node name="enemy381" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4217, -689)
+
+[node name="enemy382" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4262, -647)
+
+[node name="enemy383" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4137, -531)
+
+[node name="enemy384" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4189, -513)
+
+[node name="enemy385" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4234, -471)
+
+[node name="enemy386" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4147, -619)
+
+[node name="enemy387" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4199, -601)
+
+[node name="enemy388" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4244, -559)
+
+[node name="enemy389" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3883, -571)
+
+[node name="enemy390" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3928, -529)
+
+[node name="enemy391" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3803, -413)
+
+[node name="enemy392" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3855, -395)
+
+[node name="enemy393" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5227, -2153)
+
+[node name="enemy394" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5272, -2111)
+
+[node name="enemy395" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5151, -1759)
+
+[node name="enemy396" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5203, -1741)
+
+[node name="enemy397" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5248, -1699)
+
+[node name="enemy398" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5123, -1583)
+
+[node name="enemy399" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5175, -1565)
+
+[node name="enemy400" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5220, -1523)
+
+[node name="enemy401" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5133, -1671)
+
+[node name="enemy402" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5185, -1653)
+
+[node name="enemy403" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5230, -1611)
+
+[node name="enemy404" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5749, -1611)
+
+[node name="enemy405" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5801, -1593)
+
+[node name="enemy406" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5846, -1551)
+
+[node name="enemy407" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5721, -1435)
+
+[node name="enemy408" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5773, -1417)
+
+[node name="enemy409" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5818, -1375)
+
+[node name="enemy410" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5731, -1523)
+
+[node name="enemy411" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5783, -1505)
+
+[node name="enemy412" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5828, -1463)
+
+[node name="enemy413" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5467, -1475)
+
+[node name="enemy414" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5512, -1433)
+
+[node name="enemy415" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5387, -1317)
+
+[node name="enemy416" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5439, -1299)
+
+[node name="enemy417" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5091, -953)
+
+[node name="enemy418" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5136, -911)
+
+[node name="enemy419" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5015, -559)
+
+[node name="enemy420" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5067, -541)
+
+[node name="enemy421" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5112, -499)
+
+[node name="enemy422" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4987, -383)
+
+[node name="enemy423" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5039, -365)
+
+[node name="enemy424" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5084, -323)
+
+[node name="enemy425" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4997, -471)
+
+[node name="enemy426" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5049, -453)
+
+[node name="enemy427" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5094, -411)
+
+[node name="enemy428" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5613, -411)
+
+[node name="enemy429" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5665, -393)
+
+[node name="enemy430" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5710, -351)
+
+[node name="enemy431" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5585, -235)
+
+[node name="enemy432" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5637, -217)
+
+[node name="enemy433" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5682, -175)
+
+[node name="enemy434" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5595, -323)
+
+[node name="enemy435" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5647, -305)
+
+[node name="enemy436" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5692, -263)
+
+[node name="enemy437" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5331, -275)
+
+[node name="enemy438" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5376, -233)
+
+[node name="enemy439" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5251, -117)
+
+[node name="enemy440" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5303, -99)
+
+[node name="enemy441" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3691, -9)
+
+[node name="enemy442" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3736, 33)
+
+[node name="enemy443" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3615, 385)
+
+[node name="enemy444" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3667, 403)
+
+[node name="enemy445" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3712, 445)
+
+[node name="enemy446" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3587, 561)
+
+[node name="enemy447" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3639, 579)
+
+[node name="enemy448" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3684, 621)
+
+[node name="enemy449" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3597, 473)
+
+[node name="enemy450" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3649, 491)
+
+[node name="enemy451" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3694, 533)
+
+[node name="enemy452" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4213, 533)
+
+[node name="enemy453" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4265, 551)
+
+[node name="enemy454" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4310, 593)
+
+[node name="enemy455" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4185, 709)
+
+[node name="enemy456" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4237, 727)
+
+[node name="enemy457" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4282, 769)
+
+[node name="enemy458" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4195, 621)
+
+[node name="enemy459" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4247, 639)
+
+[node name="enemy460" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4292, 681)
+
+[node name="enemy461" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3931, 669)
+
+[node name="enemy462" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3976, 711)
+
+[node name="enemy463" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3851, 827)
+
+[node name="enemy464" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3903, 845)
+
+[node name="enemy465" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3203, 1271)
+
+[node name="enemy466" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3248, 1313)
+
+[node name="enemy467" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3127, 1665)
+
+[node name="enemy468" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3179, 1683)
+
+[node name="enemy469" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3224, 1725)
+
+[node name="enemy470" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3099, 1841)
+
+[node name="enemy471" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3151, 1859)
+
+[node name="enemy472" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3196, 1901)
+
+[node name="enemy473" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3109, 1753)
+
+[node name="enemy474" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3161, 1771)
+
+[node name="enemy475" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3206, 1813)
+
+[node name="enemy476" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3725, 1813)
+
+[node name="enemy477" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3777, 1831)
+
+[node name="enemy478" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3822, 1873)
+
+[node name="enemy479" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3697, 1989)
+
+[node name="enemy480" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3749, 2007)
+
+[node name="enemy481" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3794, 2049)
+
+[node name="enemy482" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3707, 1901)
+
+[node name="enemy483" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3759, 1919)
+
+[node name="enemy484" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3804, 1961)
+
+[node name="enemy485" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3443, 1949)
+
+[node name="enemy486" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3488, 1991)
+
+[node name="enemy487" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3363, 2107)
+
+[node name="enemy488" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(3415, 2125)
+
+[node name="enemy489" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-797, 1551)
+
+[node name="enemy490" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-752, 1593)
+
+[node name="enemy491" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-873, 1945)
+
+[node name="enemy492" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-821, 1963)
+
+[node name="enemy493" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-776, 2005)
+
+[node name="enemy494" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-901, 2121)
+
+[node name="enemy495" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-849, 2139)
+
+[node name="enemy496" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-804, 2181)
+
+[node name="enemy497" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-891, 2033)
+
+[node name="enemy498" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-839, 2051)
+
+[node name="enemy499" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-794, 2093)
+
+[node name="enemy500" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-275, 2093)
+
+[node name="enemy501" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-223, 2111)
+
+[node name="enemy502" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-178, 2153)
+
+[node name="enemy503" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-303, 2269)
+
+[node name="enemy504" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-251, 2287)
+
+[node name="enemy505" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-206, 2329)
+
+[node name="enemy506" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-293, 2181)
+
+[node name="enemy507" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-241, 2199)
+
+[node name="enemy508" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-196, 2241)
+
+[node name="enemy509" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-557, 2229)
+
+[node name="enemy510" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-512, 2271)
+
+[node name="enemy511" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-637, 2387)
+
+[node name="enemy512" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-585, 2405)
+
+[node name="enemy513" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1989, 1567)
+
+[node name="enemy514" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1944, 1609)
+
+[node name="enemy515" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2009, 2369)
+
+[node name="enemy516" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1957, 2387)
+
+[node name="enemy517" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1912, 2429)
+
+[node name="enemy518" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2037, 2545)
+
+[node name="enemy519" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1985, 2563)
+
+[node name="enemy520" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1940, 2605)
+
+[node name="enemy521" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2027, 2457)
+
+[node name="enemy522" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1975, 2475)
+
+[node name="enemy523" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1930, 2517)
+
+[node name="enemy524" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1411, 2517)
+
+[node name="enemy525" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1359, 2535)
+
+[node name="enemy526" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1314, 2577)
+
+[node name="enemy600" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2466, 2672)
+
+[node name="enemy601" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2414, 2690)
+
+[node name="enemy602" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2369, 2732)
+
+[node name="enemy603" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2404, 2602)
+
+[node name="enemy604" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2359, 2644)
+
+[node name="enemy605" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1724, 2862)
+
+[node name="enemy606" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1672, 2880)
+
+[node name="enemy607" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1627, 2922)
+
+[node name="enemy608" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1752, 3038)
+
+[node name="enemy609" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1700, 3056)
+
+[node name="enemy610" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1655, 3098)
+
+[node name="enemy611" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1742, 2950)
+
+[node name="enemy612" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1690, 2968)
+
+[node name="enemy613" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1645, 3010)
+
+[node name="enemy614" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1126, 3010)
+
+[node name="enemy615" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1074, 3028)
+
+[node name="enemy616" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1029, 3070)
+
+[node name="enemy617" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1154, 3186)
+
+[node name="enemy618" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1102, 3204)
+
+[node name="enemy619" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1057, 3246)
+
+[node name="enemy620" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1144, 3098)
+
+[node name="enemy621" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1092, 3116)
+
+[node name="enemy622" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1047, 3158)
+
+[node name="enemy623" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1408, 3146)
+
+[node name="enemy624" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1363, 3188)
+
+[node name="enemy625" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1488, 3304)
+
+[node name="enemy626" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1436, 3322)
+
+[node name="enemy627" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2860, 3286)
+
+[node name="enemy628" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2808, 3304)
+
+[node name="enemy629" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2763, 3346)
+
+[node name="enemy630" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2888, 3462)
+
+[node name="enemy631" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2836, 3480)
+
+[node name="enemy632" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2878, 3374)
+
+[node name="enemy633" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2826, 3392)
+
+[node name="enemy634" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2781, 3434)
+
+[node name="enemy635" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2262, 3434)
+
+[node name="enemy636" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2210, 3452)
+
+[node name="enemy637" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-2165, 3494)
+
+[node name="enemy638" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-710, 3044)
+
+[node name="enemy639" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-658, 3062)
+
+[node name="enemy640" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-613, 3104)
+
+[node name="enemy641" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-648, 2974)
+
+[node name="enemy642" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-603, 3016)
+
+[node name="enemy643" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(32, 3234)
+
+[node name="enemy644" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(84, 3252)
+
+[node name="enemy645" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(129, 3294)
+
+[node name="enemy646" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4, 3410)
+
+[node name="enemy647" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(56, 3428)
+
+[node name="enemy648" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(101, 3470)
+
+[node name="enemy649" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(14, 3322)
+
+[node name="enemy650" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(66, 3340)
+
+[node name="enemy651" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(111, 3382)
+
+[node name="enemy652" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(630, 3382)
+
+[node name="enemy653" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(682, 3400)
+
+[node name="enemy654" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(727, 3442)
+
+[node name="enemy655" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(602, 3558)
+
+[node name="enemy656" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(654, 3576)
+
+[node name="enemy657" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(699, 3618)
+
+[node name="enemy658" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(612, 3470)
+
+[node name="enemy659" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(664, 3488)
+
+[node name="enemy660" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(709, 3530)
+
+[node name="enemy661" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(348, 3518)
+
+[node name="enemy662" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(393, 3560)
+
+[node name="enemy663" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(268, 3676)
+
+[node name="enemy664" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(320, 3694)
+
+[node name="enemy665" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1104, 3658)
+
+[node name="enemy666" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1052, 3676)
+
+[node name="enemy667" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1007, 3718)
+
+[node name="enemy668" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1132, 3834)
+
+[node name="enemy669" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1080, 3852)
+
+[node name="enemy670" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1122, 3746)
+
+[node name="enemy671" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1070, 3764)
+
+[node name="enemy672" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1025, 3806)
+
+[node name="enemy673" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-506, 3806)
+
+[node name="enemy674" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-454, 3824)
+
+[node name="enemy675" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-409, 3866)
+
+[node name="enemy676" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(549, 1612)
+
+[node name="enemy677" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(601, 1630)
+
+[node name="enemy678" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(646, 1672)
+
+[node name="enemy679" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(611, 1542)
+
+[node name="enemy680" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(656, 1584)
+
+[node name="enemy714" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(471, 1177)
+
+[node name="enemy715" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(523, 1195)
+
+[node name="enemy716" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(568, 1237)
+
+[node name="enemy717" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(533, 1107)
+
+[node name="enemy718" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(578, 1149)
+
+[node name="enemy681" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1291, 1802)
+
+[node name="enemy682" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1343, 1820)
+
+[node name="enemy683" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1388, 1862)
+
+[node name="enemy684" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1263, 1978)
+
+[node name="enemy685" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1315, 1996)
+
+[node name="enemy686" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1360, 2038)
+
+[node name="enemy687" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1273, 1890)
+
+[node name="enemy688" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1325, 1908)
+
+[node name="enemy689" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1370, 1950)
+
+[node name="enemy690" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1889, 1950)
+
+[node name="enemy691" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1941, 1968)
+
+[node name="enemy692" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1986, 2010)
+
+[node name="enemy693" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1861, 2126)
+
+[node name="enemy694" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1913, 2144)
+
+[node name="enemy695" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1958, 2186)
+
+[node name="enemy696" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1871, 2038)
+
+[node name="enemy697" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1923, 2056)
+
+[node name="enemy698" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1968, 2098)
+
+[node name="enemy699" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1607, 2086)
+
+[node name="enemy700" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1652, 2128)
+
+[node name="enemy701" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1527, 2244)
+
+[node name="enemy702" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1579, 2262)
+
+[node name="enemy703" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(155, 2226)
+
+[node name="enemy704" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(207, 2244)
+
+[node name="enemy705" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(252, 2286)
+
+[node name="enemy706" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(127, 2402)
+
+[node name="enemy707" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(179, 2420)
+
+[node name="enemy708" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(137, 2314)
+
+[node name="enemy709" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(189, 2332)
+
+[node name="enemy710" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(234, 2374)
+
+[node name="enemy711" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(753, 2374)
+
+[node name="enemy712" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(805, 2392)
+
+[node name="enemy713" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(850, 2434)
+
+[node name="enemy527" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1439, 2693)
+
+[node name="enemy528" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1387, 2711)
+
+[node name="enemy529" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1342, 2753)
+
+[node name="enemy530" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1429, 2605)
+
+[node name="enemy531" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1377, 2623)
+
+[node name="enemy532" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1332, 2665)
+
+[node name="enemy533" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1693, 2653)
+
+[node name="enemy534" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1648, 2695)
+
+[node name="enemy535" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1773, 2811)
+
+[node name="enemy536" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1721, 2829)
+
+[node name="enemy114" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-524, 1431)
+
+[node name="enemy115" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-611, 1283)
+
+[node name="enemy116" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-559, 1301)
+
+[node name="enemy117" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-514, 1343)
+
+[node name="enemy118" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(41, 789)
+
+[node name="enemy119" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(93, 795)
+
+[node name="enemy120" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(177, 840)
+
+[node name="enemy121" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(727, 1001)
+
+[node name="enemy122" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(779, 1019)
+
+[node name="enemy123" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(824, 1061)
+
+[node name="enemy124" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(737, 913)
+
+[node name="enemy125" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(789, 931)
+
+[node name="enemy126" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(834, 973)
+
+[node name="enemy127" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(288, 1694)
+
+[node name="enemy128" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(340, 1712)
+
+[node name="enemy129" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(385, 1754)
+
+[node name="enemy130" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(260, 1870)
+
+[node name="enemy131" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(312, 1888)
+
+[node name="enemy132" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(357, 1930)
+
+[node name="enemy800" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1596, -2581)
+
+[node name="enemy801" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1648, -2563)
+
+[node name="enemy802" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1693, -2521)
+
+[node name="enemy803" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1568, -2405)
+
+[node name="enemy804" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1620, -2387)
+
+[node name="enemy805" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1665, -2345)
+
+[node name="enemy806" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1578, -2493)
+
+[node name="enemy807" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1630, -2475)
+
+[node name="enemy808" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1675, -2433)
+
+[node name="enemy809" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2194, -2433)
+
+[node name="enemy810" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2246, -2415)
+
+[node name="enemy811" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2291, -2373)
+
+[node name="enemy812" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2166, -2257)
+
+[node name="enemy813" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2218, -2239)
+
+[node name="enemy814" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2263, -2197)
+
+[node name="enemy815" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2176, -2345)
+
+[node name="enemy816" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2228, -2327)
+
+[node name="enemy817" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2273, -2285)
+
+[node name="enemy818" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1912, -2297)
+
+[node name="enemy819" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1957, -2255)
+
+[node name="enemy820" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1832, -2139)
+
+[node name="enemy821" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1884, -2121)
+
+[node name="enemy822" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2624, -2300)
+
+[node name="enemy823" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2676, -2282)
+
+[node name="enemy824" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2721, -2240)
+
+[node name="enemy825" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2596, -2124)
+
+[node name="enemy826" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2648, -2106)
+
+[node name="enemy827" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2606, -2212)
+
+[node name="enemy828" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2658, -2194)
+
+[node name="enemy829" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2703, -2152)
+
+[node name="enemy830" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2729, -2656)
+
+[node name="enemy831" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2781, -2638)
+
+[node name="enemy832" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2826, -2596)
+
+[node name="enemy833" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4842, 503)
+
+[node name="enemy834" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4894, 521)
+
+[node name="enemy835" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4939, 563)
+
+[node name="enemy836" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4814, 679)
+
+[node name="enemy837" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4866, 697)
+
+[node name="enemy838" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4911, 739)
+
+[node name="enemy839" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4824, 591)
+
+[node name="enemy840" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4876, 609)
+
+[node name="enemy841" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(4921, 651)
+
+[node name="enemy842" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5440, 651)
+
+[node name="enemy843" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5492, 669)
+
+[node name="enemy844" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5537, 711)
+
+[node name="enemy845" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5412, 827)
+
+[node name="enemy846" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5464, 845)
+
+[node name="enemy847" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5509, 887)
+
+[node name="enemy848" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5422, 739)
+
+[node name="enemy849" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5474, 757)
+
+[node name="enemy850" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5519, 799)
+
+[node name="enemy851" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5158, 787)
+
+[node name="enemy852" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5203, 829)
+
+[node name="enemy853" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5078, 945)
+
+[node name="enemy854" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5130, 963)
+
+[node name="enemy855" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5870, 784)
+
+[node name="enemy856" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5922, 802)
+
+[node name="enemy857" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5967, 844)
+
+[node name="enemy858" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5842, 960)
+
+[node name="enemy859" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5894, 978)
+
+[node name="enemy860" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5852, 872)
+
+[node name="enemy861" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5904, 890)
+
+[node name="enemy862" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5949, 932)
+
+[node name="enemy863" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(5975, 428)
+
+[node name="enemy864" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6027, 446)
+
+[node name="enemy865" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6072, 488)
+
+[node name="enemy866" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6283, -192)
+
+[node name="enemy867" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6335, -174)
+
+[node name="enemy868" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6380, -132)
+
+[node name="enemy869" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6255, -16)
+
+[node name="enemy870" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6307, 2)
+
+[node name="enemy871" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6352, 44)
+
+[node name="enemy872" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6265, -104)
+
+[node name="enemy873" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6317, -86)
+
+[node name="enemy874" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6362, -44)
+
+[node name="enemy875" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6881, -44)
+
+[node name="enemy876" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6933, -26)
+
+[node name="enemy877" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6978, 16)
+
+[node name="enemy878" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6853, 132)
+
+[node name="enemy879" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6905, 150)
+
+[node name="enemy880" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6950, 192)
+
+[node name="enemy881" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6863, 44)
+
+[node name="enemy882" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6915, 62)
+
+[node name="enemy883" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6960, 104)
+
+[node name="enemy884" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6599, 92)
+
+[node name="enemy885" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6644, 134)
+
+[node name="enemy886" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6519, 250)
+
+[node name="enemy887" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(6571, 268)
+
+[node name="enemy888" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(7311, 89)
+
+[node name="enemy889" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(7363, 107)
+
+[node name="enemy890" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(7408, 149)
+
+[node name="enemy891" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(7283, 265)
+
+[node name="enemy892" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(7335, 283)
+
+[node name="enemy893" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(7293, 177)
+
+[node name="enemy894" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(7345, 195)
+
+[node name="enemy895" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(7390, 237)
+
+[node name="enemy896" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(7416, -267)
+
+[node name="enemy897" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(7468, -249)
+
+[node name="enemy898" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(7513, -207)
+
+[node name="enemy133" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(270, 1782)
+
+[node name="enemy134" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(322, 1800)
+
+[node name="enemy135" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(367, 1842)
+
+[node name="enemy136" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1451, 1403)
+
+[node name="enemy137" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1503, 1421)
+
+[node name="enemy138" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1548, 1463)
+
+[node name="enemy139" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1423, 1579)
+
+[node name="enemy140" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1475, 1597)
+
+[node name="enemy141" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1520, 1639)
+
+[node name="enemy142" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1433, 1491)
+
+[node name="enemy143" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1485, 1509)
+
+[node name="enemy144" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1530, 1551)
+
+[node name="enemy145" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1909, 432)
+
+[node name="enemy146" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1961, 450)
+
+[node name="enemy147" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2006, 492)
+
+[node name="enemy148" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1881, 608)
+
+[node name="enemy149" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1933, 626)
+
+[node name="enemy150" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1978, 668)
+
+[node name="enemy151" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1891, 520)
+
+[node name="enemy152" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1943, 538)
+
+[node name="enemy153" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1988, 580)
+
+[node name="enemy154" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2391, -530)
+
+[node name="enemy155" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2443, -512)
+
+[node name="enemy156" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2488, -470)
+
+[node name="enemy157" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2363, -354)
+
+[node name="enemy158" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2415, -336)
+
+[node name="enemy159" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2460, -294)
+
+[node name="enemy160" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2373, -442)
+
+[node name="enemy161" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2425, -424)
+
+[node name="enemy162" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2470, -382)
+
+[node name="enemy163" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1393, -1054)
+
+[node name="enemy164" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1445, -1036)
+
+[node name="enemy165" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1490, -994)
+
+[node name="enemy166" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1365, -878)
+
+[node name="enemy167" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1417, -860)
+
+[node name="enemy168" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1462, -818)
+
+[node name="enemy169" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1375, -966)
+
+[node name="enemy170" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1427, -948)
+
+[node name="enemy171" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1472, -906)
+
+[node name="enemy196" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1173, -169)
+
+[node name="enemy197" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1149, 25)
+
+[node name="enemy198" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1191, -81)
+
+[node name="enemy199" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-477, 409)
+
+[node name="enemy200" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-505, 585)
+
+[node name="enemy201" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-398, 557)
+
+[node name="enemy202" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-123, -499)
+
+[node name="enemy203" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-167, -546)
+
+[node name="enemy207" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-37, -398)
+
+[node name="enemy208" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-81, -445)
+
+[node name="enemy209" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(480, -884)
+
+[node name="enemy210" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(436, -931)
+
+[node name="enemy211" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(566, -783)
+
+[node name="enemy212" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(522, -830)
+
+[node name="enemy213" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(157, -744)
+
+[node name="enemy214" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(113, -791)
+
+[node name="enemy215" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(243, -643)
+
+[node name="enemy216" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(199, -690)
+
+[node name="enemy217" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(857, -668)
+
+[node name="enemy218" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(813, -715)
+
+[node name="enemy219" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(943, -567)
+
+[node name="enemy220" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(899, -614)
+
+[node name="enemy221" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1102, -856)
+
+[node name="enemy222" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1058, -903)
+
+[node name="enemy223" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1188, -755)
+
+[node name="enemy224" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1144, -802)
+
+[node name="enemy204" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(497, -1418)
+
+[node name="enemy205" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-466, -1812)
+
+[node name="enemy206" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-456, -1900)
+
+[node name="enemy172" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(380, -1503)
+
+[node name="enemy173" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(432, -1485)
+
+[node name="enemy174" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(477, -1443)
+
+[node name="enemy175" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(352, -1327)
+
+[node name="enemy176" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(404, -1309)
+
+[node name="enemy177" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(449, -1267)
+
+[node name="enemy178" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(362, -1415)
+
+[node name="enemy179" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(414, -1397)
+
+[node name="enemy180" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(459, -1355)
+
+[node name="enemy181" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-861, -913)
+
+[node name="enemy190" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(2080, -688)
+
+[node name="enemy191" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1965, -660)
+
+[node name="enemy192" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-271, -607)
+
+[node name="enemy193" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1349, -77)
+
+[node name="enemy194" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(1234, -49)
+
+[node name="enemy195" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-1002, 4)
+
+[node name="enemy182" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-809, -895)
+
+[node name="enemy183" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-764, -853)
+
+[node name="enemy184" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-889, -737)
+
+[node name="enemy185" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-837, -719)
+
+[node name="enemy186" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-792, -677)
+
+[node name="enemy187" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-879, -825)
+
+[node name="enemy188" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-827, -807)
+
+[node name="enemy189" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(-782, -765)
+
+[node name="enemy67" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(449, 531)
+
+[node name="enemy68" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(650, 350)
+
+[node name="enemy69" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(488, 450)
+
+[node name="enemy70" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(436, 203)
+
+[node name="enemy71" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(416, 150)
+
+[node name="enemy72" parent="." instance=ExtResource("3_02bwr")]
+position = Vector2(376, 102)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 45.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="main" method="_on_timer_timeout"]

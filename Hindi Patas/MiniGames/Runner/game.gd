@@ -69,19 +69,18 @@ func _process(delta):
 		$enemy.position.x = 100
 		$enemy.position.y = 4800
 		$game_over.text = ""
-		$press_r.text = ""		
+		$press_r.text = ""
+		$you_win.text = ""
 		game_over = 0
+	if $you_win.text == "YOU WIN":
+		Timer.new().start(5)
+		SceneTransition.load_scene(load(next_scene))
 
 func _on_area_2d_body_entered(body):
 	if body == $Player:
-		var timer = Timer.new()
 		var pos = $Player.position
 		$you_win.text = "YOU WIN"
 		pos.x -= 2200
 		pos.y += 500
 		$you_win.text = "YOU WIN"
 		$you_win.set_position(pos)
-		timer.set_wait_time(5)
-		timer.start()
-		SceneTransition.load_scene(load(next_scene))
-

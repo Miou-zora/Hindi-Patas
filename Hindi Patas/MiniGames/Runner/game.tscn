@@ -2295,6 +2295,7 @@ size = Vector2(1950, 3054)
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_fqjxq")
+next_scene = "res://Scenes/Levels/Level_01.tscn"
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-880, -88)

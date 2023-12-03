@@ -159,7 +159,8 @@ unique_name_in_owner = true
 position = Vector2(232, 200)
 
 [node name="TutorialText" type="Node2D" parent="."]
-position = Vector2(-1372, -120)
+visible = false
+position = Vector2(-1643, 20)
 
 [node name="Credits" type="Label" parent="TutorialText"]
 offset_left = 1416.0

@@ -24,8 +24,7 @@ var is_dialogue = false
 
 func _process(_delta):
 	# Calling functions
-	gravity = gravity * 60 * _delta
-	movement()
+	movement(_delta)
 	player_animations()
 	flip_player()
 	if (is_dialogue == true and Input.is_action_just_pressed("Talk")):
@@ -34,10 +33,10 @@ func _process(_delta):
 # --------- CUSTOM FUNCTIONS ---------- #
 
 # <-- Player Movement Code -->
-func movement():
+func movement(delta):
 	# Gravity
 	if !is_on_floor():
-		velocity.y += gravity
+		velocity.y += gravity * 60 * delta
 	elif is_on_floor():
 		jump_count = max_jump_count
 	

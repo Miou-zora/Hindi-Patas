@@ -19,7 +19,8 @@ func _process(delta):
 
 func new_game():
 	get_tree().call_group("Tiles", "queue_free")
-	score = 0
+	score = -1
+	score_update()
 	$EndHUD.hide()
 	$SpawnTimer.start()
 	$ScoreTimer.start()

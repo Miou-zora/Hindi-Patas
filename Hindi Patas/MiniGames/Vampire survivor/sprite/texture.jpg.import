@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m1anf2e1h86a"
-path="res://.godot/imported/jo.png-d68c33916e46294f695f44b0519315ea.ctex"
+uid="uid://bvf6wu570o3lh"
+path="res://.godot/imported/texture.jpg-43c174db1975a697ef3dc83d55230795.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://jo.png"
-dest_files=["res://.godot/imported/jo.png-d68c33916e46294f695f44b0519315ea.ctex"]
+source_file="res://MiniGames/Vampire survivor/sprite/texture.jpg"
+dest_files=["res://.godot/imported/texture.jpg-43c174db1975a697ef3dc83d55230795.ctex"]
 
 [params]
 

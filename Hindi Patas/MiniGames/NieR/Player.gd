@@ -60,7 +60,6 @@ func get_forward_vector():
 func _on_shoot_timer_timeout():
 	can_shoot = true
 
-
 func _on_area_2d_area_entered(_area):
 	if _area.collision_layer != 0b10000:
 		get_tree().reload_current_scene()

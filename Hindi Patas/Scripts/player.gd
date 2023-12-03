@@ -24,6 +24,7 @@ var is_dialogue = false
 
 func _process(_delta):
 	# Calling functions
+	gravity = gravity * 60 * _delta
 	movement()
 	player_animations()
 	flip_player()

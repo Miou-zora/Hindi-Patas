@@ -64,10 +64,10 @@ func _process(delta):
 		$press_r.text = "PRESS R TO RESTART"
 		$press_r.set_position(pos)
 	if Input.is_action_pressed("Restart") and game_over:
-		$Player.position.x = 8400
-		$Player.position.y = 4000
-		$enemy.position.x = 100
-		$enemy.position.y = 4800
+		$Player.position.x = 5540
+		$Player.position.y = 4500
+		$enemy.position.x = -1000
+		$enemy.position.y = 4600
 		$game_over.text = ""
 		$press_r.text = ""
 		$you_win.text = ""

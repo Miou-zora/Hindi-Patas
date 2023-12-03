@@ -1,4 +1,4 @@
-extends Area2D
+extends CharacterBody2D
 
 var ROTATION_SPEED: float = 1.5
 var SPEED: int = 100
@@ -35,16 +35,26 @@ func get_forward_vector():
 	var y = sin(angle_radians)
 	return Vector2(x, y)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	look_at_character(delta)
-	position += get_forward_vector() * SPEED * delta
+	pass
 
-func _on_area_entered(_area):
-	queue_free()
+func _physics_process(delta):
+	look_at_character(delta)
+	velocity = get_forward_vector().normalized() * SPEED
+	move_and_slide()
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		if collision.get_collider().collision_layer != 0b10 && collision.get_collider().collision_layer != 0b10000:
+			queue_free()
+			return
 
 func _on_projectile_timer_timeout():
 	var projectile = projectile_prefab.instantiate()
 	projectile.set_global_position(position + get_forward_vector() * 40)
 	projectile.rotation = rotation
 	get_parent().add_child(projectile)
+
+func _on_body_entered(body):
+	if body.collision_layer != 0b10000:
+		queue_free()
+

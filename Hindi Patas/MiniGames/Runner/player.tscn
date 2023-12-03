@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cubu7lgnc1bk2"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_rhrlj"]
-[ext_resource type="Texture2D" uid="uid://cdtrfeia7nlet" path="res://sprites/rondoudou.png" id="1_w8o1g"]
+[ext_resource type="Script" path="res://MiniGames/Runner/player.gd" id="1_rhrlj"]
+[ext_resource type="Texture2D" uid="uid://cdtrfeia7nlet" path="res://MiniGames/Runner/rondoudou.png" id="1_w8o1g"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_253im"]
 

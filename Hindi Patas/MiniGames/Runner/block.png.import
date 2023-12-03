@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5brbgkwtins8"
-path="res://.godot/imported/kirby.png-b9eaf8290c78ed0fa867fd1dc480acbe.ctex"
+uid="uid://qmnp58fg8m88"
+path="res://.godot/imported/block.png-490ce771ed145dc6a9c2e9d5ad5f5bd5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/kirby.png"
-dest_files=["res://.godot/imported/kirby.png-b9eaf8290c78ed0fa867fd1dc480acbe.ctex"]
+source_file="res://MiniGames/Runner/block.png"
+dest_files=["res://.godot/imported/block.png-490ce771ed145dc6a9c2e9d5ad5f5bd5.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ce0cpv3ewtn51"
-path="res://.godot/imported/7x1Spikes.png-83cafc12b11def714a4d685bd5063eaf.ctex"
+uid="uid://cdtrfeia7nlet"
+path="res://.godot/imported/rondoudou.png-18706c6e003ab019e88745ae6d54838b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Spritesheet/7x1Spikes.png"
-dest_files=["res://.godot/imported/7x1Spikes.png-83cafc12b11def714a4d685bd5063eaf.ctex"]
+source_file="res://MiniGames/Runner/rondoudou.png"
+dest_files=["res://.godot/imported/rondoudou.png-18706c6e003ab019e88745ae6d54838b.ctex"]
 
 [params]
 

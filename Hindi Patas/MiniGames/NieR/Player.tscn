@@ -1,13 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://es0sflgmdgu7"]
 
 [ext_resource type="Script" path="res://MiniGames/NieR/Player.gd" id="1_al5xr"]
-[ext_resource type="PackedScene" uid="uid://4lptl0n52gtw" path="res://MiniGames/NieR/Projectile.tscn" id="2_lcggs"]
+[ext_resource type="PackedScene" uid="uid://dr8ml2irnddo2" path="res://MiniGames/NieR/PlayerProj.tscn" id="2_jfpqt"]
 
 [node name="Player" type="CharacterBody2D"]
 collision_mask = 26
 motion_mode = 1
 script = ExtResource("1_al5xr")
-projectile = ExtResource("2_lcggs")
+projectile = ExtResource("2_jfpqt")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 rotation = -4.71239

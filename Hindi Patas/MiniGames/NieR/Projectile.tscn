@@ -8,7 +8,7 @@ height = 64.0
 
 [node name="Projectile" type="Area2D"]
 collision_layer = 4
-collision_mask = 2
+collision_mask = 18
 script = ExtResource("1_l80es")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]

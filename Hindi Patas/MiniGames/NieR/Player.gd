@@ -6,7 +6,7 @@ extends CharacterBody2D
 @export var left_key: Key = KEY_LEFT
 @export var shoot_key: MouseButton = MOUSE_BUTTON_LEFT
 
-@export var speed: int = 40000
+@export var speed: int = 400
 
 @export var projectile: PackedScene
 
@@ -14,7 +14,7 @@ var can_shoot: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	look_at(get_global_mouse_position())
 
 func move(delta):
 	var deltaMove: Vector2 = Vector2.ZERO
@@ -27,13 +27,18 @@ func move(delta):
 	if Input.is_key_pressed(left_key):
 		deltaMove.x -= 1
 	
-	velocity = deltaMove.normalized() * speed * delta
+	velocity = deltaMove.normalized() * speed
 	move_and_slide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	move(delta)
 	look_at(get_global_mouse_position())
+	move(delta)
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		if collision.get_collider().collision_layer != 0b10000:
+			get_tree().reload_current_scene()
+			return
 	if Input.is_mouse_button_pressed(shoot_key) && can_shoot:
 		var new_projectile = projectile.instantiate()
 		

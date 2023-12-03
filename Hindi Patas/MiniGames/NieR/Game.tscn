@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://gtsjmw2kmeph"]
+[gd_scene load_steps=9 format=3 uid="uid://gtsjmw2kmeph"]
 
 [ext_resource type="Script" path="res://MiniGames/NieR/Game.gd" id="1_8ex6h"]
 [ext_resource type="PackedScene" uid="uid://es0sflgmdgu7" path="res://MiniGames/NieR/Player.tscn" id="1_bjg12"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://MiniGames/NieR/EnemyWaves.gd" id="4_sbueo"]
 [ext_resource type="Script" path="res://MiniGames/NieR/Wave.gd" id="5_mhxpj"]
 [ext_resource type="Script" path="res://MiniGames/NieR/SpawnEnemy.gd" id="6_2dioo"]
+[ext_resource type="PackedScene" uid="uid://cbyguxtejri86" path="res://MiniGames/NieR/Wall.tscn" id="7_u5gd0"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_xqe7j"]
 bounce = 0.04
@@ -253,32 +254,134 @@ enemy_prefab = ExtResource("3_v38gu")
 position = Vector2(519, -284)
 rotation = -3.89907
 
+[node name="11" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
+position = Vector2(25, 45)
+rotation = -2.69111
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/11"]
+position = Vector2(399, -260)
+rotation = 2.47662
+
+[node name="12" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
+position = Vector2(25.0001, 45)
+rotation = -2.69111
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/12"]
+position = Vector2(474, -191)
+rotation = 2.5988
+
+[node name="13" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
+position = Vector2(25.0001, 45)
+rotation = -2.69111
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/13"]
+position = Vector2(545, -133)
+rotation = 2.9723
+
+[node name="14" type="Node2D" parent="EnemyWaves/WaveThree/EnemiesSetup"]
+position = Vector2(25.0001, 45)
+rotation = -2.69111
+script = ExtResource("6_2dioo")
+enemy_prefab = ExtResource("3_v38gu")
+
+[node name="SpawnPos" type="Marker2D" parent="EnemyWaves/WaveThree/EnemiesSetup/14"]
+position = Vector2(519, -284)
+rotation = -3.89907
+
 [node name="PlayerSpawn" type="Marker2D" parent="."]
-position = Vector2(768, 408)
+position = Vector2(624, 328)
 
 [node name="Walls" type="Node2D" parent="."]
+
+[node name="Wall" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(408, 520)
+
+[node name="Wall2" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(536, 144)
+
+[node name="Wall3" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(568, 144)
+
+[node name="Wall4" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(408, 488)
+
+[node name="Wall5" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(504, 144)
+
+[node name="Wall6" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(600, 144)
+
+[node name="Wall7" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(864, 280)
+
+[node name="Wall8" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(896, 280)
+
+[node name="Wall9" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(632, 144)
+
+[node name="Wall10" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(864, 400)
+
+[node name="Wall11" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(664, 144)
+
+[node name="Wall12" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(896, 400)
+
+[node name="Wall13" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(472, 520)
+
+[node name="Wall14" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(504, 520)
+
+[node name="Wall15" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(440, 520)
+
+[node name="Wall16" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(864, 248)
+
+[node name="Wall17" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(864, 216)
+
+[node name="Wall18" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(928, 248)
+
+[node name="Wall19" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(960, 248)
+
+[node name="Wall20" parent="Walls" instance=ExtResource("7_u5gd0")]
+position = Vector2(896, 248)
+
+[node name="Borders" type="Node2D" parent="."]
 position = Vector2(768, 408)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Walls"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Borders"]
 collision_layer = 16
 collision_mask = 3
 physics_material_override = SubResource("PhysicsMaterial_xqe7j")
 
-[node name="Bot" type="CollisionPolygon2D" parent="Walls/StaticBody2D"]
+[node name="Bot" type="CollisionPolygon2D" parent="Borders/StaticBody2D"]
 position = Vector2(-280, 352)
 polygon = PackedVector2Array(-504, 40, -504, 56, 952, 56, 952, 40)
 
-[node name="Top" type="CollisionPolygon2D" parent="Walls/StaticBody2D"]
+[node name="Top" type="CollisionPolygon2D" parent="Borders/StaticBody2D"]
 position = Vector2(168, -368)
 rotation = -3.14159
 polygon = PackedVector2Array(-504, 40, -504, 56, 382.856, 55.9999, 952, 56, 952, 40)
 
-[node name="Left" type="CollisionPolygon2D" parent="Walls/StaticBody2D"]
+[node name="Left" type="CollisionPolygon2D" parent="Borders/StaticBody2D"]
 position = Vector2(-728, 40)
 rotation = 1.57079
 polygon = PackedVector2Array(-504, 40, -504, 56, 952, 56, 952, 40)
 
-[node name="Right" type="CollisionPolygon2D" parent="Walls/StaticBody2D"]
+[node name="Right" type="CollisionPolygon2D" parent="Borders/StaticBody2D"]
 position = Vector2(608, 208)
 rotation = -1.57079
 polygon = PackedVector2Array(-504, 40, -504, 56, 952, 56, 952, 40)

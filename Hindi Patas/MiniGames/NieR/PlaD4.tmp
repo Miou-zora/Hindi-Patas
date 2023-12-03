@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr8ml2irnddo2"]
+
+[ext_resource type="Script" path="res://MiniGames/NieR/Projectile.gd" id="1_oiiwb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7udtp"]
+radius = 8.0
+height = 64.0
+
+[node name="PlayerProj" type="RigidBody2D"]
+collision_layer = 4
+collision_mask = 26
+gravity_scale = 0.0
+script = ExtResource("1_oiiwb")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-32, -8, -32, 8, 32, 8, 32, -8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_7udtp")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

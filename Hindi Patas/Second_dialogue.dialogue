@@ -15,7 +15,7 @@ if GlobalDialogue.name_doudou == false:
 		- Hey, je te reconnais !
 			Créature Rose: Vraiment? Ang nom pangalan ay rondoudou 
 			Rondoudou: Iwasan ang maudite gemmes, at pumunta sa dessous lac ng lave
-			set GlobalDialogue.name_doudou == true
+			set GlobalDialogue.name_doudou = true
 		- Salut
 			Créature Rose: Iwasan ang maudite gemmes, at pumunta sa dessous lac ng lave
 else:
@@ -26,7 +26,7 @@ else:
 		- Quoi !?
 			Rondoudou: Iwasan ang sinungaling gems, at pumunta sa ibaba laguna ng lava
 	else if GlobalDialogue.nb_letter == 2
-		Rondoudou: : Te revoilà, batang isa
+		Rondoudou: Te revoilà, batang isa
 		- Heu, Salut
 			Rondoudou: Iwasan ang maudite gemmmes, at pumunta sa ibaba laguna ng lave
 	else

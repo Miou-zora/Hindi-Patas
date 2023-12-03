@@ -6,14 +6,14 @@
 [ext_resource type="PackedScene" uid="uid://w7m6tehvvy3g" path="res://Scenes/Prefabs/player.tscn" id="2_pay8t"]
 [ext_resource type="PackedScene" uid="uid://bfmh3fm2de78o" path="res://Scenes/Prefabs/Coin.tscn" id="3_rrh80"]
 [ext_resource type="Script" path="res://Scripts/GameManager.gd" id="4_vgfkr"]
-[ext_resource type="PackedScene" uid="uid://crx6y404qp1mw" path="res://pinky.tscn" id="5_n3fis"]
+[ext_resource type="PackedScene" path="res://pinky.tscn" id="5_n3fis"]
 [ext_resource type="Texture2D" uid="uid://jaegp53ccc7w" path="res://Assets/Spritesheet/platformPack_tilesheet.png" id="5_wqbaa"]
 [ext_resource type="Script" path="res://Scripts/GameUI.gd" id="6_66mfc"]
-[ext_resource type="PackedScene" uid="uid://mhnqethh5ec" path="res://Scenes/Prefabs/Letter.tscn" id="6_rycy1"]
+[ext_resource type="PackedScene" path="res://Scenes/Prefabs/Letter.tscn" id="6_rycy1"]
 [ext_resource type="Texture2D" uid="uid://clreg520jah1j" path="res://Assets/platformPack_item008.png" id="7_j7jun"]
 [ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="8_gwcy2"]
-[ext_resource type="PackedScene" uid="uid://dgcatt7fyolm6" path="res://platform.tscn" id="10_qkixv"]
-[ext_resource type="PackedScene" uid="uid://di15nc7mn6dhs" path="res://Scenes/Prefabs/parallax_background.tscn" id="12_r0a63"]
+[ext_resource type="PackedScene" path="res://platform.tscn" id="10_qkixv"]
+[ext_resource type="PackedScene" path="res://Scenes/Prefabs/parallax_background.tscn" id="12_r0a63"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gs0qk"]
 texture = ExtResource("5_wqbaa")

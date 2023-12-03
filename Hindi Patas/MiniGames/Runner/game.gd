@@ -1,5 +1,6 @@
 extends Node2D
 
+@export_file("*.tscn") var next_scene
 var game_over
 
 # Called when the node enters the scene tree for the first time.
@@ -73,9 +74,14 @@ func _process(delta):
 
 func _on_area_2d_body_entered(body):
 	if body == $Player:
+		var timer = Timer.new()
 		var pos = $Player.position
 		$you_win.text = "YOU WIN"
 		pos.x -= 2200
 		pos.y += 500
 		$you_win.text = "YOU WIN"
 		$you_win.set_position(pos)
+		timer.set_wait_time(5)
+		timer.start()
+		SceneTransition.load_scene(load(next_scene))
+

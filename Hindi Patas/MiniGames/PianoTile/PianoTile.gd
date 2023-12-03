@@ -5,11 +5,10 @@ extends Node
 
 var screen_size
 var score = 0
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
 	screen_size = get_viewport().size
 
-# Called every frame. 'delta' is the elap	sed time since the previous frame.
 func _process(delta):
 	if score == 45:
 		$SpawnTimer.stop()

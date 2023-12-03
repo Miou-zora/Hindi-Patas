@@ -1,6 +1,6 @@
 extends Node2D
 
-#@export var next_scene: PackedScene
+@export_file("*.tscn") var next_scene
 
 func start():
 	$WaveOne.start()
@@ -9,5 +9,5 @@ func start():
 
 func _process(delta):
 	if $WaveOne.is_clear() && $WaveTwo.is_clear() && $WaveThree.is_clear():
-		#SceneTransition.load_scene(next_scene)
-		pass
+		if next_scene:
+			SceneTransition.load_scene(load(next_scene))

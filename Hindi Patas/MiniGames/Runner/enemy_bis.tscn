@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6ljq6m0wc7e8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f17f2"]
+
+[sub_resource type="Curve2D" id="Curve2D_7y8kg"]
+
+[node name="enemy" type="CharacterBody2D"]
+position = Vector2(3490, 2052)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2128, 486)
+scale = Vector2(100, 100)
+shape = SubResource("CircleShape2D_f17f2")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(-2124, 485)
+polygon = PackedVector2Array(0, -1000, 259, -966, 500, -866, 708, -708, 866, -500, 966, -260, 999, 0, 967, 254, 867, 499, 706, 708, 502, 865, 259, 966, 1, 1000, -259, 966, -502, 866, -708, 706, -867, 498, -967, 258, -1000, 0, -968, -261, -869, -500, -711, -708, -501, -866, -261, -967)
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_7y8kg")

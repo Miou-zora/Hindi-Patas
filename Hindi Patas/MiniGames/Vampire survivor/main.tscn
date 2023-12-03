@@ -10,6 +10,7 @@ size = Vector2(16, 43)
 position = Vector2(33, 55)
 motion_mode = 1
 script = ExtResource("1_y48uu")
+next_scene = "res://Scenes/Levels/Level_021.tscn"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1

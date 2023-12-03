@@ -55,6 +55,5 @@ func get_forward_vector():
 func _on_shoot_timer_timeout():
 	can_shoot = true
 
-
 func _on_area_2d_area_entered(_area):
 	get_tree().reload_current_scene()

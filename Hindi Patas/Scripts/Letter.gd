@@ -22,7 +22,7 @@ func coin_hover(delta):
 
 # Coin collected
 func _on_body_entered(body):
-	if body.is_in_group("Player"):
+	if body.is_in_group("Player") or body.is_in_group("Player_Minigame#1"):
 		AudioManager.coin_pickup_sfx.play()
 		GameManager.add_score()
 		GlobalDialogue.nb_letter += 1

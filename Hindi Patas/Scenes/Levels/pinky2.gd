@@ -5,8 +5,8 @@ extends CharacterBody2D
 func _ready():
 	pass # Replace with function body.
 
-func rondoudou():
+func rondoudou2():
 	pass 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
+func _process(delta):
 	pass

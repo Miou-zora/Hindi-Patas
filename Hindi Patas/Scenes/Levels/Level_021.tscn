@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://e16if8ame6tk"]
+[gd_scene load_steps=22 format=3 uid="uid://e16if8ame6tk"]
 
 [ext_resource type="Texture2D" uid="uid://d087anw2blim2" path="res://tile.png" id="1_ekxjo"]
 [ext_resource type="Texture2D" uid="uid://c5q0esbc1ii2r" path="res://50shadesofgrey.png" id="2_b43si"]
@@ -6,6 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://c86tuopraihrx" path="res://character.tscn" id="4_0oeqq"]
 [ext_resource type="PackedScene" uid="uid://dmvj34eln27v8" path="res://Scenes/Prefabs/LevelFinishOcclusion.tscn" id="5_i54yt"]
 [ext_resource type="PackedScene" uid="uid://bjb3dx2x4bocm" path="res://Scenes/Levels/Level_022.tscn" id="6_6s238"]
+[ext_resource type="Script" path="res://Scripts/GameManager.gd" id="7_ms8fl"]
+[ext_resource type="PackedScene" uid="uid://mhnqethh5ec" path="res://Scenes/Prefabs/Letter.tscn" id="7_v2awr"]
+[ext_resource type="Script" path="res://Scripts/GameUI.gd" id="8_c362m"]
+[ext_resource type="Texture2D" uid="uid://clreg520jah1j" path="res://Assets/platformPack_item008.png" id="9_k7x0j"]
+[ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="10_4dtr8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x0uvy"]
 texture = ExtResource("1_ekxjo")
@@ -21043,7 +21048,7 @@ shadow_enabled = true
 texture = ExtResource("3_s6s8e")
 
 [node name="CharacterBody2D" parent="." groups=["Player_Minigame#1"] instance=ExtResource("4_0oeqq")]
-position = Vector2(40, 601)
+position = Vector2(44, 537)
 
 [node name="LightOccluder2D6" type="LightOccluder2D" parent="."]
 scale = Vector2(1.685, 1.685)
@@ -21072,3 +21077,54 @@ occluder = SubResource("OccluderPolygon2D_xwqex")
 [node name="LevelFinishDoor" parent="." instance=ExtResource("5_i54yt")]
 position = Vector2(113, 301)
 next_scene = ExtResource("6_6s238")
+
+[node name="GameManager" type="Node2D" parent="."]
+position = Vector2(885, 417)
+script = ExtResource("7_ms8fl")
+
+[node name="UserInterface" type="CanvasLayer" parent="."]
+
+[node name="GameUI" type="Control" parent="UserInterface"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 23.0
+offset_top = 17.0
+offset_right = 23.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("8_c362m")
+
+[node name="Score" type="Control" parent="UserInterface/GameUI"]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ScoreTexture" type="TextureRect" parent="UserInterface/GameUI/Score"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 116.0
+offset_bottom = 116.0
+texture = ExtResource("9_k7x0j")
+stretch_mode = 4
+
+[node name="ScoreLabel" type="Label" parent="UserInterface/GameUI/Score"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 104.0
+offset_top = 42.0
+offset_right = 148.0
+offset_bottom = 84.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("10_4dtr8")
+theme_override_font_sizes/font_size = 32
+text = "x 3"
+
+[node name="Letter" parent="." instance=ExtResource("7_v2awr")]
+position = Vector2(1067, 207)

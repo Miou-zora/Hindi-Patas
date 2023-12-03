@@ -59,7 +59,7 @@ Talk={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://First_dialogue.dialogue")
+locale/translations_pot_files=PackedStringArray("res://First_dialogue.dialogue", "res://Second_dialogue.dialogue")
 
 [rendering]
 

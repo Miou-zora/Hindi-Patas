@@ -1,16 +1,20 @@
-[gd_scene load_steps=16 format=3 uid="uid://cjanwm3sy2x37"]
+[gd_scene load_steps=20 format=3 uid="uid://cjanwm3sy2x37"]
 
 [ext_resource type="PackedScene" uid="uid://cyti38f0lagf2" path="res://Scenes/Prefabs/LevelFinishDoor.tscn" id="1_oqkjg"]
 [ext_resource type="PackedScene" uid="uid://b7cjpxxnok5kx" path="res://MiniGames/Runner/game.tscn" id="2_ann5h"]
 [ext_resource type="PackedScene" uid="uid://e16if8ame6tk" path="res://Scenes/Levels/Level_021.tscn" id="2_gomw2"]
+[ext_resource type="PackedScene" uid="uid://gtsjmw2kmeph" path="res://MiniGames/NieR/Game.tscn" id="2_np2g3"]
 [ext_resource type="PackedScene" uid="uid://w7m6tehvvy3g" path="res://Scenes/Prefabs/player.tscn" id="2_pay8t"]
 [ext_resource type="PackedScene" uid="uid://bfmh3fm2de78o" path="res://Scenes/Prefabs/Coin.tscn" id="3_rrh80"]
 [ext_resource type="Script" path="res://Scripts/GameManager.gd" id="4_vgfkr"]
+[ext_resource type="PackedScene" path="res://pinky.tscn" id="5_n3fis"]
 [ext_resource type="Texture2D" uid="uid://jaegp53ccc7w" path="res://Assets/Spritesheet/platformPack_tilesheet.png" id="5_wqbaa"]
 [ext_resource type="Script" path="res://Scripts/GameUI.gd" id="6_66mfc"]
+[ext_resource type="PackedScene" path="res://Scenes/Prefabs/Letter.tscn" id="6_rycy1"]
 [ext_resource type="Texture2D" uid="uid://clreg520jah1j" path="res://Assets/platformPack_item008.png" id="7_j7jun"]
 [ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="8_gwcy2"]
 [ext_resource type="PackedScene" uid="uid://dgcatt7fyolm6" path="res://platform.tscn" id="10_qkixv"]
+[ext_resource type="PackedScene" path="res://Scenes/Prefabs/parallax_background.tscn" id="12_r0a63"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gs0qk"]
 texture = ExtResource("5_wqbaa")
@@ -66,6 +70,10 @@ texture_region_size = Vector2i(64, 64)
 0:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:5/0/physics_layer_0/angular_velocity = 0.0
 0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 0, 16, 0, 32, 32, -32, 32)
+1:5/0 = 0
+1:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:5/0/physics_layer_0/angular_velocity = 0.0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 
 [sub_resource type="TileSet" id="TileSet_2fcbi"]
 tile_size = Vector2i(64, 64)
@@ -73,6 +81,11 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_rndpx")
 
 [node name="Level_01" type="Node2D"]
+
+[node name="LevelFinishDoorTrueNieR" parent="." instance=ExtResource("1_oqkjg")]
+z_index = 1
+position = Vector2(1473, 749)
+next_scene = ExtResource("2_np2g3")
 
 [node name="LevelFinishDoorNieR" parent="." instance=ExtResource("1_oqkjg")]
 z_index = 1
@@ -103,13 +116,19 @@ drag_bottom_margin = 0.4
 editor_draw_limits = true
 editor_draw_drag_margin = true
 
+[node name="CharacterBody2D" parent="." instance=ExtResource("5_n3fis")]
+position = Vector2(253, 433)
+
 [node name="Coins" type="Node2D" parent="."]
 
 [node name="Coin" parent="Coins" instance=ExtResource("3_rrh80")]
-position = Vector2(576, 406)
+position = Vector2(546, 415)
 
 [node name="Coin2" parent="Coins" instance=ExtResource("3_rrh80")]
-position = Vector2(680.425, 353)
+position = Vector2(1062, 404)
+
+[node name="Letter" parent="Coins" instance=ExtResource("6_rycy1")]
+position = Vector2(946, 390)
 
 [node name="Coin3" parent="Coins" instance=ExtResource("3_rrh80")]
 position = Vector2(844, 408)
@@ -130,7 +149,7 @@ layer_0/tile_data = PackedInt32Array(458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 4
 [node name="Traps" type="TileMap" parent="Level" groups=["Traps"]]
 tile_set = SubResource("TileSet_2fcbi")
 format = 2
-layer_0/tile_data = PackedInt32Array(589836, 0, 5, 589835, 0, 5, 589834, 0, 5, 589833, 0, 5, 589832, 0, 5, 589831, 0, 5, 589830, 0, 5, 589829, 0, 5)
+layer_0/tile_data = PackedInt32Array(589836, 0, 5, 589835, 0, 5, 589834, 0, 5, 589833, 0, 5, 589832, 0, 5, 589831, 0, 5, 589830, 0, 5, 589829, 0, 5, 262123, 65536, 5, 327659, 65536, 5, 393195, 65536, 5, 458731, 65536, 5, 524267, 65536, 5, 589803, 65536, 5, 655339, 65536, 5, 720876, 65536, 5, 786412, 65536, 5, 851948, 65536, 5, 917484, 65536, 5, 983021, 65536, 5, 1048557, 65536, 5, 1114094, 65536, 5, 1179631, 65536, 5, 1245167, 65536, 5, 1245168, 65536, 5, 1310704, 65536, 5, 1310705, 65536, 5, 1376241, 65536, 5, 1376242, 65536, 5, 1441778, 65536, 5, 1441779, 65536, 5, 1507316, 65536, 5, 1507317, 65536, 5, 1507318, 65536, 5, 1507319, 65536, 5, 1507320, 65536, 5, 1507321, 65536, 5, 1441786, 65536, 5, 1441787, 65536, 5, 1441788, 65536, 5, 1376253, 65536, 5, 1376254, 65536, 5, 1376255, 65536, 5, 1310720, 65536, 5, 1310721, 65536, 5, 1310722, 65536, 5, 1310723, 65536, 5, 1310724, 65536, 5, 1310725, 65536, 5, 1310726, 65536, 5, 1376262, 65536, 5, 1376263, 65536, 5, 1376264, 65536, 5, 1376265, 65536, 5, 1441802, 65536, 5, 1441803, 65536, 5, 1441804, 65536, 5, 1441805, 65536, 5, 1441806, 65536, 5, 1441807, 65536, 5, 1441808, 65536, 5, 1441809, 65536, 5, 1441810, 65536, 5, 1441811, 65536, 5, 1441812, 65536, 5, 1441813, 65536, 5, 1441814, 65536, 5, 1441815, 65536, 5, 1441816, 65536, 5, 1441817, 65536, 5, 1441818, 65536, 5, 1441819, 65536, 5, 1441820, 65536, 5, 1441821, 65536, 5, 1441822, 65536, 5, 1441823, 65536, 5, 1441824, 65536, 5, 1441825, 65536, 5, 1376289, 65536, 5, 1376290, 65536, 5, 1376291, 65536, 5, 1376292, 65536, 5, 1376293, 65536, 5, 1376294, 65536, 5, 1376295, 65536, 5, 1376296, 65536, 5, 1376297, 65536, 5, 1376298, 65536, 5, 1376299, 65536, 5, 1376300, 65536, 5, 1376301, 65536, 5, 1376302, 65536, 5, 1376303, 65536, 5, 1376304, 65536, 5, 1376305, 65536, 5, 1376306, 65536, 5, 1310770, 65536, 5, 1310771, 65536, 5, 1245235, 65536, 5, 1245236, 65536, 5, 1179700, 65536, 5, 1179701, 65536, 5, 1114165, 65536, 5, 1114166, 65536, 5, 1048630, 65536, 5, 1048631, 65536, 5, 983095, 65536, 5, 983096, 65536, 5, 983097, 65536, 5, 1048633, 65536, 5, 1048634, 65536, 5, 1048635, 65536, 5, 1048636, 65536, 5, 1048637, 65536, 5, 1048638, 65536, 5, 1048639, 65536, 5, 1048640, 65536, 5, 1048641, 65536, 5, 1048642, 65536, 5, 1048643, 65536, 5, 1048644, 65536, 5, 1048645, 65536, 5, 1048646, 65536, 5, 1048647, 65536, 5, 983111, 65536, 5, 983112, 65536, 5, 917576, 65536, 5, 852041, 65536, 5, 786505, 65536, 5, 720969, 65536, 5, 655433, 65536, 5, 589897, 65536, 5, 524361, 65536, 5, 458825, 65536, 5, 393289, 65536, 5, 327752, 65536, 5, 262216, 65536, 5, 196679, 65536, 5, 131143, 65536, 5, 65607, 65536, 5, 71, 65536, 5, -65465, 65536, 5, -131001, 65536, 5, -196538, 65536, 5, -262074, 65536, 5, -262075, 65536, 5, -327611, 65536, 5, -327612, 65536, 5, -327613, 65536, 5, -393149, 65536, 5, -458685, 65536, 5, -524222, 65536, 5, -589758, 65536, 5, -655295, 65536, 5, -720832, 65536, 5, -786369, 65536, 5, -851905, 65536, 5, -917442, 65536, 5, -917443, 65536, 5, -982979, 65536, 5, -1048516, 65536, 5, -1114053, 65536, 5, -1179589, 65536, 5, -1179590, 65536, 5, -1245126, 65536, 5, -1245127, 65536, 5, -1310663, 65536, 5, -1376200, 65536, 5, -1376201, 65536, 5, -1441738, 65536, 5, -1441739, 65536, 5, -1441740, 65536, 5, -1441741, 65536, 5, -1507278, 65536, 5, -1572815, 65536, 5, -1572816, 65536, 5, -1572817, 65536, 5, -1572818, 65536, 5, -1638355, 65536, 5, -1638356, 65536, 5, -1638357, 65536, 5, -1703894, 65536, 5, -1703895, 65536, 5, -1703896, 65536, 5, -1769433, 65536, 5, -1769434, 65536, 5, -1834971, 65536, 5, -1834972, 65536, 5, -1834973, 65536, 5, -1834974, 65536, 5, -1834975, 65536, 5, -1834976, 65536, 5, -1834977, 65536, 5, -1834978, 65536, 5, -1834979, 65536, 5, -1900516, 65536, 5, -1900517, 65536, 5, -1900518, 65536, 5, -1900519, 65536, 5, -1900520, 65536, 5, -1900521, 65536, 5, -1900522, 65536, 5, -1900523, 65536, 5, -1900524, 65536, 5, -1900525, 65536, 5, -1900526, 65536, 5, -1900527, 65536, 5, -1900528, 65536, 5, -1900529, 65536, 5, -1900530, 65536, 5, -1834995, 65536, 5, -1834996, 65536, 5, -1834997, 65536, 5, -1769462, 65536, 5, -1769463, 65536, 5, -1769464, 65536, 5, -1769465, 65536, 5, -1769466, 65536, 5, -1703931, 65536, 5, -1703932, 65536, 5, -1703933, 65536, 5, -1638398, 65536, 5, -1638399, 65536, 5, -1638400, 65536, 5, -1572865, 65536, 5, -1507330, 65536, 5, -1507331, 65536, 5, -1507332, 65536, 5, -1441797, 65536, 5, -1441798, 65536, 5, -1376263, 65536, 5, -1376264, 65536, 5, -1310729, 65536, 5, -1310730, 65536, 5, -1245195, 65536, 5, -1245196, 65536, 5, -1179661, 65536, 5, -1114126, 65536, 5, -1114127, 65536, 5, -1114128, 65536, 5, -1048592, 65536, 5, -1048593, 65536, 5, -983058, 65536, 5, -917523, 65536, 5, -917524, 65536, 5, -851989, 65536, 5, -786453, 65536, 5, -786454, 65536, 5, -720919, 65536, 5, -720920, 65536, 5, -655384, 65536, 5, -655385, 65536, 5, -589850, 65536, 5, -524315, 65536, 5, -524316, 65536, 5, -458781, 65536, 5, -393245, 65536, 5, -327710, 65536, 5, -262174, 65536, 5, -196639, 65536, 5, -131103, 65536, 5, -65567, 65536, 5, -30, 65536, 5, 65506, 65536, 5, 131042, 65536, 5, 196578, 65536, 5, 262114, 65536, 5, 262115, 65536, 5, 327651, 65536, 5, 393187, 65536, 5, 393188, 65536, 5, 458724, 65536, 5, 458725, 65536, 5, 524261, 65536, 5, 589797, 65536, 5, 589798, 65536, 5, 589799, 65536, 5, 655335, 65536, 5, 720872, 65536, 5, 720873, 65536, 5, 786410, 65536, 5, 786411, 65536, 5)
 
 [node name="SpawnPoint" type="Marker2D" parent="Level"]
 unique_name_in_owner = true
@@ -139,31 +158,30 @@ position = Vector2(174, 300)
 [node name="TutorialText" type="Node2D" parent="."]
 
 [node name="Movement" type="Label" parent="TutorialText"]
-offset_left = 264.0
-offset_top = 336.0
-offset_right = 542.0
-offset_bottom = 420.0
+offset_left = 245.0
+offset_top = 372.0
+offset_right = 523.0
+offset_bottom = 456.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("8_gwcy2")
 theme_override_font_sizes/font_size = 32
-text = "A & D To Move
-Spacebar To Jump"
+text = "F"
 
 [node name="SetNextScene" type="Label" parent="TutorialText"]
-offset_left = 808.0
-offset_top = 256.0
-offset_right = 1239.0
-offset_bottom = 382.0
+offset_left = 1090.0
+offset_top = 316.0
+offset_right = 1521.0
+offset_bottom = 442.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("8_gwcy2")
-theme_override_font_sizes/font_size = 32
-text = "Level Finish
-Set the next scene
-from \"LevelFinishDoor\" Area"
+theme_override_font_sizes/font_size = 19
+text = "Press Enter while
+going through the door"
+horizontal_alignment = 1
 
 [node name="GameManager" type="Node2D" parent="."]
 script = ExtResource("4_vgfkr")
@@ -214,3 +232,5 @@ text = "x 3"
 
 [node name="Platform" parent="." instance=ExtResource("10_qkixv")]
 position = Vector2(0, -10)
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("12_r0a63")]

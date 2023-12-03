@@ -1,0 +1,39 @@
+~ start
+if GlobalDialogue.name_doudou == false:
+	if GlobalDialogue.nb_letter <= 1
+		Créature Rose : Salamat muli, batang isa
+		- Hein ?!
+			Créature Rose: Iwasan ang sinungaling gems, at pumunta sa ibaba laguna ng lava
+		- Quoi !?
+			Créature Rose: coubeh
+	else if GlobalDialogue.nb_letter == 2
+		Créature Rose : Te revoilà, batang isa
+		- Heu, Salut
+			Créature Rose: Iwasan ang maudite gemmmes, at pumunta sa ibaba laguna ng lave
+	else
+		Créature Rose : Te revoilà, jeune homme
+		- Hey, je te reconnais !
+			Créature Rose: Vraiment? Ang nom pangalan ay rondoudou 
+			Rondoudou: Iwasan ang maudite gemmes, at pumunta sa dessous lac ng lave
+			set GlobalDialogue.name_doudou = true
+		- Salut
+			Créature Rose: Iwasan ang maudite gemmes, at pumunta sa dessous lac ng lave
+else:
+	if GlobalDialogue.nb_letter <= 1
+		Rondoudou: Salamat muli, batang isa
+		- Hein ?!
+			Rondoudou: Iwasan ang sinungaling gems, at pumunta sa ibaba laguna ng lava
+		- Quoi !?
+			Rondoudou: coubeh
+	else if GlobalDialogue.nb_letter == 2
+		Rondoudou: Te revoilà, batang isa
+		- Heu, Salut
+			Rondoudou: Iwasan ang maudite gemmmes, at pumunta sa ibaba laguna ng lave
+	else
+		Rondoudou: : Te revoilà, jeune homme
+		- Hey, Salut Rondoudou!
+			Rondoudou: Ikaw ay ang pinakamahusay !
+		- Salut
+			Rondoudou: Iwasan ang maudite gemmes, at pumunta sa dessous lac ng lave
+
+=> END

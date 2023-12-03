@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://djoioea6dufmm"]
+[gd_scene load_steps=3 format=3 uid="uid://djoioea6dufmm"]
 
 [ext_resource type="Script" path="res://MiniGames/PianoTile/EndHUD.gd" id="1_vcrg8"]
+[ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="2_hdbgm"]
 
 [node name="EndHUD" type="CanvasLayer"]
 script = ExtResource("1_vcrg8")
@@ -17,6 +18,7 @@ offset_right = 72.0
 offset_bottom = 132.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_hdbgm")
 theme_override_font_sizes/font_size = 32
 text = "Replay"
 
@@ -33,6 +35,7 @@ offset_bottom = 12.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_hdbgm")
 theme_override_font_sizes/font_size = 64
 text = "Lose"
 horizontal_alignment = 1

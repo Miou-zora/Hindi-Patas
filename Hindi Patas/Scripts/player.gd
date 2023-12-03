@@ -13,6 +13,8 @@ var jump_count : int = 2
 @export var double_jump : = false
 
 var is_grounded : bool = false
+var is_dialogue = false
+var is_dialogue2 = false
 
 @onready var player_sprite = $AnimatedSprite2D
 @onready var spawn_point = %SpawnPoint
@@ -23,17 +25,21 @@ var is_grounded : bool = false
 
 func _process(_delta):
 	# Calling functions
-	movement()
+	movement(_delta)
 	player_animations()
 	flip_player()
+	if (is_dialogue == true and Input.is_action_just_pressed("Talk")):
+		DialogueManager.show_example_dialogue_balloon(load("res://First_dialogue.dialogue"))
+	if (is_dialogue2 == true and Input.is_action_just_pressed("Talk")):
+		DialogueManager.show_example_dialogue_balloon(load("res://Second_dialogue.dialogue"))
 	
 # --------- CUSTOM FUNCTIONS ---------- #
 
 # <-- Player Movement Code -->
-func movement():
+func movement(delta):
 	# Gravity
 	if !is_on_floor():
-		velocity.y += gravity
+		velocity.y += gravity * 60 * delta
 	elif is_on_floor():
 		jump_count = max_jump_count
 	
@@ -107,4 +113,18 @@ func _on_collision_body_entered(_body):
 		AudioManager.death_sfx.play()
 		death_particles.emitting = true
 		death_tween()
+		GlobalDialogue.nb_letter = 0
 		get_tree().reload_current_scene()
+
+func _on_diag_area_body_entered(body):
+	if body.has_method("rondoudou"):
+		is_dialogue = true
+	if body.has_method("rondoudou2"):
+		is_dialogue2 = true
+
+
+func _on_diag_area_body_exited(body):
+	if body.has_method("rondoudou"):
+		is_dialogue = false
+	if body.has_method("rondoudou2"):
+		is_dialogue2 = false

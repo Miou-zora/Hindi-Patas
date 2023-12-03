@@ -60,10 +60,10 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2k2qa"]
-size = Vector2(490, 317)
+size = Vector2(550, 352.5)
 
 [node name="spikes" type="CharacterBody2D"]
-position = Vector2(0, -150)
+position = Vector2(0, -300)
 script = ExtResource("1_21qud")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -84,7 +84,7 @@ libraries = {
 [node name="player_enter" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player_enter"]
-position = Vector2(-23, -127)
+position = Vector2(-53, -144.75)
 shape = SubResource("RectangleShape2D_2k2qa")
 
 [connection signal="body_entered" from="player_enter" to="." method="_on_player_enter_body_entered"]

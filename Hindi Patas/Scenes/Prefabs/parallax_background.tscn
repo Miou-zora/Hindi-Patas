@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://di15nc7mn6dhs"]
+
+[ext_resource type="Texture2D" uid="uid://blk24yfoxvbnd" path="res://Assets/Spritesheet/Cloud.png" id="1_lec7b"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1440, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(819, 410)
+scale = Vector2(2.49312, 1.86847)
+texture = ExtResource("1_lec7b")

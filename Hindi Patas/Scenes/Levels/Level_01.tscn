@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" path="res://Scenes/Prefabs/Letter.tscn" id="6_rycy1"]
 [ext_resource type="Texture2D" uid="uid://clreg520jah1j" path="res://Assets/platformPack_item008.png" id="7_j7jun"]
 [ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="8_gwcy2"]
-[ext_resource type="PackedScene" path="res://platform.tscn" id="10_qkixv"]
+[ext_resource type="PackedScene" uid="uid://dgcatt7fyolm6" path="res://platform.tscn" id="10_qkixv"]
 [ext_resource type="PackedScene" path="res://Scenes/Prefabs/parallax_background.tscn" id="12_r0a63"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gs0qk"]

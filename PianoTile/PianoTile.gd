@@ -9,9 +9,13 @@ func _ready():
 
 # Called every frame. 'delta' is the elap	sed time since the previous frame.
 func _process(delta):
-	pass
+	if score == 45:
+		$SpawnTimer.stop()
+		$ScoreTimer.stop()
+		score += 1
 
 func new_game():
+	get_tree().call_group("Tiles", "queue_free")
 	$EndHUD.hide()
 	$SpawnTimer.start()
 	$ScoreTimer.start()

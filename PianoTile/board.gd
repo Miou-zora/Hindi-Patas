@@ -15,41 +15,41 @@ func _ready():
 	pass
 
 func _process(delta):
-	if Input.is_action_pressed("Key_Z") and not key_pressed[0]:
+	if Input.is_action_pressed("Key_1") and not key_pressed[0]:
 		if hit_board[0]:
 			emit_signal("hit", body_board[0])
 			hit_board[0] = false
 		else:
 			emit_signal("lose")
 		key_pressed[0] = true
-	elif not Input.is_action_pressed("Key_Z"):
+	elif not Input.is_action_pressed("Key_1"):
 		key_pressed[0] = false
-	if Input.is_action_pressed("Key_Q") and not key_pressed[1]:
+	if Input.is_action_pressed("Key_2") and not key_pressed[1]:
 		if hit_board[1]:
 			emit_signal("hit", body_board[1])
 			hit_board[1] = false
 		else:
 			emit_signal("lose")
 		key_pressed[1] = true
-	elif not Input.is_action_pressed("Key_Q"):
+	elif not Input.is_action_pressed("Key_2"):
 		key_pressed[1] = false
-	if Input.is_action_pressed("Key_S") and not key_pressed[2]:
+	if Input.is_action_pressed("Key_3") and not key_pressed[2]:
 		if hit_board[2]:
 			emit_signal("hit", body_board[2])
 			hit_board[2] = false
 		else:
 			emit_signal("lose")
 		key_pressed[2] = true
-	elif not Input.is_action_pressed("Key_S"):
+	elif not Input.is_action_pressed("Key_3"):
 		key_pressed[2] = false
-	if Input.is_action_pressed("Key_D") and not key_pressed[3]:
+	if Input.is_action_pressed("Key_4") and not key_pressed[3]:
 		if hit_board[3]:
 			emit_signal("hit", body_board[3])
 			hit_board[3] = false
 		else:
 			emit_signal("lose")
 		key_pressed[3] = true
-	elif not Input.is_action_pressed("Key_D"):
+	elif not Input.is_action_pressed("Key_4"):
 		key_pressed[3] = false
 
 func _on_body_exited(body):

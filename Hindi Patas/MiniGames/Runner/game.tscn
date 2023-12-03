@@ -2357,24 +2357,12 @@ shape = SubResource("RectangleShape2D_4jn7b")
 
 [node name="Player" parent="." instance=ExtResource("5_noc2g")]
 z_index = 1
-position = Vector2(4191, 4556)
+position = Vector2(8219, 3832)
 scale = Vector2(10, 10)
 script = ExtResource("6_tw8vh")
 metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(16, 36)
-limit_left = 0
-limit_bottom = 705
-limit_smoothed = true
-position_smoothing_enabled = true
-drag_horizontal_enabled = true
-drag_vertical_enabled = true
-drag_left_margin = 0.4
-drag_top_margin = 0.4
-drag_right_margin = 0.4
-drag_bottom_margin = 0.4
-editor_draw_limits = true
-editor_draw_drag_margin = true
+zoom = Vector2(0.15, 0.15)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

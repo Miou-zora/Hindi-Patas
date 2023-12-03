@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk5w75c3sayt8"]
+
+[ext_resource type="Script" path="res://board.gd" id="1_ynbnm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mk3tn"]
+size = Vector2(262.71, 77.9568)
+
+[node name="Board" type="Area2D"]
+scale = Vector2(0.974457, 1.02622)
+script = ExtResource("1_ynbnm")
+
+[node name="FirstBoard" type="Polygon2D" parent="."]
+position = Vector2(492.582, 592.466)
+polygon = PackedVector2Array(-32.8387, -38.978, 32.8389, -38.978, 32.8389, 38.978, -32.8387, 38.978)
+
+[node name="SecondBoard" type="Polygon2D" parent="."]
+position = Vector2(558.26, 592.466)
+polygon = PackedVector2Array(-32.8389, -38.978, 32.8387, -38.978, 32.8387, 38.978, -32.8389, 38.978)
+
+[node name="ThirdBoard" type="Polygon2D" parent="."]
+position = Vector2(623.937, 592.466)
+polygon = PackedVector2Array(-32.8387, -38.978, 32.8389, -38.978, 32.8389, 38.978, -32.8387, 38.978)
+
+[node name="FourthBoard" type="Polygon2D" parent="."]
+position = Vector2(689.615, 592.466)
+polygon = PackedVector2Array(-32.8388, -38.978, 32.8388, -38.978, 32.8388, 38.978, -32.8388, 38.978)
+
+[node name="FirstColision" type="CollisionShape2D" parent="."]
+position = Vector2(591.098, 592.466)
+shape = SubResource("RectangleShape2D_mk3tn")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

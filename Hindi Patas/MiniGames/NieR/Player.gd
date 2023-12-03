@@ -6,7 +6,7 @@ extends CharacterBody2D
 @export var left_key: Key = KEY_LEFT
 @export var shoot_key: MouseButton = MOUSE_BUTTON_LEFT
 
-@export var speed: int = 400
+@export var speed: int = 40000
 
 @export var projectile: PackedScene
 
@@ -27,8 +27,8 @@ func move(delta):
 	if Input.is_key_pressed(left_key):
 		deltaMove.x -= 1
 	
-	if deltaMove.length() > 0:
-		move_and_collide(deltaMove * speed * delta)
+	velocity = deltaMove.normalized() * speed * delta
+	move_and_slide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -57,4 +57,5 @@ func _on_shoot_timer_timeout():
 
 
 func _on_area_2d_area_entered(_area):
-	get_tree().reload_current_scene()
+	if _area.collision_layer != 0b10000:
+		get_tree().reload_current_scene()

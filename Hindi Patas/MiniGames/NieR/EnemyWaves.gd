@@ -9,5 +9,4 @@ func start():
 
 func _process(delta):
 	if $WaveOne.is_clear() && $WaveTwo.is_clear() && $WaveThree.is_clear():
-		if next_scene:
-			SceneTransition.load_scene(load(next_scene))
+		SceneTransition.load_scene(load(next_scene))

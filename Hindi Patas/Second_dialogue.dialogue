@@ -5,7 +5,7 @@ if GlobalDialogue.name_doudou == false:
 		- Hein ?!
 			Créature Rose: Iwasan ang sinungaling gems, at pumunta sa ibaba laguna ng lava
 		- Quoi !?
-			Créature Rose: Iwasan ang sinungaling gems, at pumunta sa ibaba laguna ng lava
+			Créature Rose: coubeh
 	else if GlobalDialogue.nb_letter == 2
 		Créature Rose : Te revoilà, batang isa
 		- Heu, Salut
@@ -24,7 +24,7 @@ else:
 		- Hein ?!
 			Rondoudou: Iwasan ang sinungaling gems, at pumunta sa ibaba laguna ng lava
 		- Quoi !?
-			Rondoudou: Iwasan ang sinungaling gems, at pumunta sa ibaba laguna ng lava
+			Rondoudou: coubeh
 	else if GlobalDialogue.nb_letter == 2
 		Rondoudou: Te revoilà, batang isa
 		- Heu, Salut

@@ -5,7 +5,7 @@ if GlobalDialogue.nb_letter == 0
 	- Hein ?!
 		Créature Rose: Ang mapanganib nito doon, ang plataporma sa harap mo ay repleksyon lamang ng tunay na anyo nito, kailangan mong magtiwala sa akin
 	- Quoi !?
-		Créature Rose: Ang mapanganib nito doon, ang plataporma sa harap mo ay repleksyon lamang ng tunay na anyo nito, kailangan mong magtiwala sa akin
+		Créature Rose: coubeh
 else
 	Créature Rose : Bonjour, binata
 	- Hein ?!

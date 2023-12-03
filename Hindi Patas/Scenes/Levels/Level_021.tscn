@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dmvj34eln27v8" path="res://Scenes/Prefabs/LevelFinishOcclusion.tscn" id="5_i54yt"]
 [ext_resource type="PackedScene" uid="uid://bjb3dx2x4bocm" path="res://Scenes/Levels/Level_022.tscn" id="6_6s238"]
 [ext_resource type="Script" path="res://Scripts/GameManager.gd" id="7_ms8fl"]
-[ext_resource type="PackedScene" path="res://Scenes/Prefabs/Letter.tscn" id="7_v2awr"]
+[ext_resource type="PackedScene" uid="uid://mhnqethh5ec" path="res://Scenes/Prefabs/Letter.tscn" id="7_v2awr"]
 [ext_resource type="Script" path="res://Scripts/GameUI.gd" id="8_c362m"]
 [ext_resource type="Texture2D" uid="uid://clreg520jah1j" path="res://Assets/platformPack_item008.png" id="9_k7x0j"]
 [ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="10_4dtr8"]

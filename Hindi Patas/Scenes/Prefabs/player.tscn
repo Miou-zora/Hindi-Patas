@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://w7m6tehvvy3g"]
+[gd_scene load_steps=14 format=3 uid="uid://w7m6tehvvy3g"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_qt7d6"]
 [ext_resource type="Texture2D" uid="uid://cbss87b7xk5lc" path="res://Assets/Spritesheet/platformerPack_character.png" id="2_q0cxm"]
@@ -65,6 +65,9 @@ point_count = 3
 offsets = PackedFloat32Array(0.25, 1)
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ddmjd"]
+size = Vector2(106, 77)
+
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_qt7d6")
 
@@ -120,4 +123,12 @@ scale_amount_max = 30.0
 scale_amount_curve = SubResource("Curve_m2jh0")
 color_ramp = SubResource("Gradient_3gc37")
 
+[node name="DiagArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2DDiag" type="CollisionShape2D" parent="DiagArea"]
+position = Vector2(-3, 11.5)
+shape = SubResource("RectangleShape2D_ddmjd")
+
 [connection signal="body_entered" from="Collision" to="." method="_on_collision_body_entered"]
+[connection signal="body_entered" from="DiagArea" to="." method="_on_diag_area_body_entered"]
+[connection signal="body_exited" from="DiagArea" to="." method="_on_diag_area_body_exited"]

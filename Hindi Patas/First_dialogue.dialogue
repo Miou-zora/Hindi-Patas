@@ -1,0 +1,15 @@
+~ start
+
+if GlobalDialogue.nb_letter == 0
+	Créature Rose : Kamusta, binata
+	- Hein ?!
+		Créature Rose: Ang mapanganib nito doon, ang plataporma sa harap mo ay repleksyon lamang ng tunay na anyo nito, kailangan mong magtiwala sa akin
+	- Quoi !?
+		Créature Rose: Ang mapanganib nito doon, ang plataporma sa harap mo ay repleksyon lamang ng tunay na anyo nito, kailangan mong magtiwala sa akin
+else
+	Créature Rose : Bonjour, binata
+	- Hein ?!
+		Créature Rose: Ang mapanganib nito doon, ang plataporma sa harap mo ay repleksyon lamang ng tunay na anyo nito, kailangan mong magtiwala sa akin
+	- Bonjour ?
+		Créature Rose: Nakikita kong natututo ka ng aming langue, mabuti, ngunit huwag kalimutang sauter nang loin.
+=> END

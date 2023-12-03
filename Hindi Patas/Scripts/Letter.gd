@@ -24,10 +24,9 @@ func coin_hover(delta):
 func _on_body_entered(body):
 	if body.is_in_group("Player"):
 		AudioManager.coin_pickup_sfx.play()
-		get_tree().call_group("Player", "death_tween")
+		GameManager.add_score()
+		GlobalDialogue.nb_letter += 1
 		var tween = create_tween()
 		tween.tween_property(self, "scale", Vector2.ZERO, 0.1)
 		await tween.finished
 		queue_free()
-		GlobalDialogue.nb_letter = 0
-		get_tree().reload_current_scene()

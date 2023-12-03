@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cjanwm3sy2x37"]
+[gd_scene load_steps=19 format=3 uid="uid://cjanwm3sy2x37"]
 
 [ext_resource type="PackedScene" uid="uid://cyti38f0lagf2" path="res://Scenes/Prefabs/LevelFinishDoor.tscn" id="1_oqkjg"]
 [ext_resource type="PackedScene" uid="uid://gtsjmw2kmeph" path="res://MiniGames/NieR/Game.tscn" id="2_7prue"]
@@ -6,11 +6,14 @@
 [ext_resource type="PackedScene" uid="uid://w7m6tehvvy3g" path="res://Scenes/Prefabs/player.tscn" id="2_pay8t"]
 [ext_resource type="PackedScene" uid="uid://bfmh3fm2de78o" path="res://Scenes/Prefabs/Coin.tscn" id="3_rrh80"]
 [ext_resource type="Script" path="res://Scripts/GameManager.gd" id="4_vgfkr"]
+[ext_resource type="PackedScene" uid="uid://crx6y404qp1mw" path="res://pinky.tscn" id="5_n3fis"]
 [ext_resource type="Texture2D" uid="uid://jaegp53ccc7w" path="res://Assets/Spritesheet/platformPack_tilesheet.png" id="5_wqbaa"]
 [ext_resource type="Script" path="res://Scripts/GameUI.gd" id="6_66mfc"]
+[ext_resource type="PackedScene" uid="uid://mhnqethh5ec" path="res://Scenes/Prefabs/Letter.tscn" id="6_rycy1"]
 [ext_resource type="Texture2D" uid="uid://clreg520jah1j" path="res://Assets/platformPack_item008.png" id="7_j7jun"]
 [ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="8_gwcy2"]
 [ext_resource type="PackedScene" uid="uid://dgcatt7fyolm6" path="res://platform.tscn" id="10_qkixv"]
+[ext_resource type="PackedScene" uid="uid://di15nc7mn6dhs" path="res://Scenes/Prefabs/parallax_background.tscn" id="12_r0a63"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gs0qk"]
 texture = ExtResource("5_wqbaa")
@@ -103,13 +106,19 @@ drag_bottom_margin = 0.4
 editor_draw_limits = true
 editor_draw_drag_margin = true
 
+[node name="CharacterBody2D" parent="." instance=ExtResource("5_n3fis")]
+position = Vector2(253, 433)
+
 [node name="Coins" type="Node2D" parent="."]
 
 [node name="Coin" parent="Coins" instance=ExtResource("3_rrh80")]
-position = Vector2(576, 406)
+position = Vector2(546, 415)
 
 [node name="Coin2" parent="Coins" instance=ExtResource("3_rrh80")]
-position = Vector2(680.425, 353)
+position = Vector2(1062, 404)
+
+[node name="Letter" parent="Coins" instance=ExtResource("6_rycy1")]
+position = Vector2(946, 390)
 
 [node name="Coin3" parent="Coins" instance=ExtResource("3_rrh80")]
 position = Vector2(844, 408)
@@ -137,6 +146,7 @@ unique_name_in_owner = true
 position = Vector2(174, 300)
 
 [node name="TutorialText" type="Node2D" parent="."]
+visible = false
 
 [node name="Movement" type="Label" parent="TutorialText"]
 offset_left = 264.0
@@ -214,3 +224,5 @@ text = "x 3"
 
 [node name="Platform" parent="." instance=ExtResource("10_qkixv")]
 position = Vector2(0, -10)
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("12_r0a63")]

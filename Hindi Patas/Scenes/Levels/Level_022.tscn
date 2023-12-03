@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bjb3dx2x4bocm"]
+[gd_scene load_steps=15 format=3 uid="uid://bjb3dx2x4bocm"]
 
 [ext_resource type="PackedScene" uid="uid://w7m6tehvvy3g" path="res://Scenes/Prefabs/player.tscn" id="2_lpo2y"]
 [ext_resource type="PackedScene" uid="uid://bfmh3fm2de78o" path="res://Scenes/Prefabs/Coin.tscn" id="3_nht2m"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://clreg520jah1j" path="res://Assets/platformPack_item008.png" id="7_ns8o6"]
 [ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="8_doswy"]
 [ext_resource type="PackedScene" uid="uid://d4b0sljvq8fgj" path="res://spikes.tscn" id="8_vule2"]
+[ext_resource type="PackedScene" uid="uid://di15nc7mn6dhs" path="res://Scenes/Prefabs/parallax_background.tscn" id="9_6xyn1"]
 
 [sub_resource type="GDScript" id="GDScript_ef81o"]
 script/source = "extends Node2D
@@ -220,3 +221,5 @@ text = "x 3"
 [node name="spikes" parent="." instance=ExtResource("8_vule2")]
 position = Vector2(0, -10)
 motion_mode = 1
+
+[node name="ParallaxBackground" parent="spikes" instance=ExtResource("9_6xyn1")]

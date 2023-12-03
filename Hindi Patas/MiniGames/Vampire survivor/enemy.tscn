@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dr528kgpwxyey"]
+
+[ext_resource type="Texture2D" uid="uid://ckh36jgpiw1g2" path="res://MiniGames/Vampire survivor/sprite/king-dedede-kirby-s-adventure-kirby-super-star-luigi-japanese-castle-removebg-preview.png" id="1_mupdu"]
+[ext_resource type="Script" path="res://MiniGames/Vampire survivor/enemy.gd" id="1_nk4r1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_okvsf"]
+size = Vector2(40, 35)
+
+[node name="enemy" type="CharacterBody2D"]
+texture_filter = 1
+position = Vector2(245, 62)
+motion_mode = 1
+script = ExtResource("1_nk4r1")
+
+[node name="sprite" type="Sprite2D" parent="."]
+position = Vector2(3, -4)
+scale = Vector2(0.1, 0.0915)
+texture = ExtResource("1_mupdu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(5, -4.5)
+shape = SubResource("RectangleShape2D_okvsf")

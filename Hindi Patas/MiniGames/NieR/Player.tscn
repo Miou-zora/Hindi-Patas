@@ -1,13 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://es0sflgmdgu7"]
 
 [ext_resource type="Script" path="res://MiniGames/NieR/Player.gd" id="1_al5xr"]
-[ext_resource type="PackedScene" uid="uid://4lptl0n52gtw" path="res://MiniGames/NieR/Projectile.tscn" id="2_lcggs"]
+[ext_resource type="PackedScene" uid="uid://dr8ml2irnddo2" path="res://MiniGames/NieR/PlayerProj.tscn" id="2_jfpqt"]
 
 [node name="Player" type="CharacterBody2D"]
-collision_mask = 10
+collision_mask = 26
 motion_mode = 1
 script = ExtResource("1_al5xr")
-projectile = ExtResource("2_lcggs")
+projectile = ExtResource("2_jfpqt")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 rotation = -4.71239
@@ -46,11 +46,19 @@ rotation = 1.5708
 polygon = PackedVector2Array(0, -40, -24, 8.00009, -2.89599e-05, -8, 24, 7.99991)
 
 [node name="Area2D" type="Area2D" parent="."]
-collision_mask = 10
+collision_mask = 26
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
 rotation = 1.5708
 polygon = PackedVector2Array(-24, 8.00009, 0, -40, 24, 7.99991, 0.00011584, 32)
 
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
+limit_right = 1422
+limit_bottom = 800
+position_smoothing_enabled = true
+
 [connection signal="timeout" from="ShootTimer" to="." method="_on_shoot_timer_timeout"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=3 uid="uid://cjanwm3sy2x37"]
 
 [ext_resource type="PackedScene" uid="uid://cyti38f0lagf2" path="res://Scenes/Prefabs/LevelFinishDoor.tscn" id="1_oqkjg"]
-[ext_resource type="PackedScene" uid="uid://gtsjmw2kmeph" path="res://MiniGames/NieR/Game.tscn" id="2_7prue"]
+[ext_resource type="PackedScene" uid="uid://b7cjpxxnok5kx" path="res://MiniGames/Runner/game.tscn" id="2_ann5h"]
 [ext_resource type="PackedScene" uid="uid://e16if8ame6tk" path="res://Scenes/Levels/Level_021.tscn" id="2_gomw2"]
 [ext_resource type="PackedScene" uid="uid://w7m6tehvvy3g" path="res://Scenes/Prefabs/player.tscn" id="2_pay8t"]
 [ext_resource type="PackedScene" uid="uid://bfmh3fm2de78o" path="res://Scenes/Prefabs/Coin.tscn" id="3_rrh80"]
@@ -84,7 +84,7 @@ sources/0 = SubResource("TileSetAtlasSource_rndpx")
 [node name="LevelFinishDoorNieR" parent="." instance=ExtResource("1_oqkjg")]
 z_index = 1
 position = Vector2(48, 400)
-next_scene = ExtResource("2_7prue")
+next_scene = ExtResource("2_ann5h")
 
 [node name="LevelFinishDoor" parent="." instance=ExtResource("1_oqkjg")]
 z_index = 1

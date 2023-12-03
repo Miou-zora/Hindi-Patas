@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://dmvj34eln27v8"]
+[gd_scene load_steps=4 format=3 uid="uid://dmvj34eln27v8"]
 
 [ext_resource type="Script" path="res://Scenes/Prefabs/LevelFinishOcclusion.gd" id="1_vgrxu"]
+[ext_resource type="PackedScene" uid="uid://di711x8ofoi6r" path="res://MiniGames/Vampire survivor/word.tscn" id="2_65ue1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_34g1n"]
 size = Vector2(60, 80)
 
 [node name="LevelFinishDoor" type="Area2D"]
 script = ExtResource("1_vgrxu")
+next_scene = ExtResource("2_65ue1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 8)

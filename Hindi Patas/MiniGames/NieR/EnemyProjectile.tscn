@@ -6,9 +6,12 @@
 radius = 20.0
 height = 40.0
 
-[node name="EnemyProjectile" type="Area2D"]
+[node name="EnemyProjectile" type="RigidBody2D"]
 collision_layer = 8
-collision_mask = 5
+collision_mask = 21
+gravity_scale = 0.0
+max_contacts_reported = 1
+contact_monitor = true
 script = ExtResource("1_rpspm")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
@@ -25,5 +28,5 @@ position = Vector2(-2.86102e-06, -2.86102e-06)
 scale = Vector2(2.4, 2.4)
 rect = Rect2(-9, -9, 18, 18)
 
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

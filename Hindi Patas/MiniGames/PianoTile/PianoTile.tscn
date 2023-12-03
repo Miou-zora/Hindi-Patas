@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bdpwijvmpsmd7"]
+[gd_scene load_steps=7 format=3 uid="uid://bdpwijvmpsmd7"]
 
 [ext_resource type="Script" path="res://MiniGames/PianoTile/PianoTile.gd" id="1_yf4rd"]
 [ext_resource type="PackedScene" uid="uid://2cprlwlcetg5" path="res://MiniGames/PianoTile/Tile.tscn" id="2_exu1h"]
 [ext_resource type="PackedScene" uid="uid://ktovoxuw48pd" path="res://MiniGames/PianoTile/PianoTileHUD.tscn" id="3_cmr82"]
 [ext_resource type="PackedScene" uid="uid://dk5w75c3sayt8" path="res://MiniGames/PianoTile/Board.tscn" id="4_rhlgx"]
 [ext_resource type="PackedScene" uid="uid://djoioea6dufmm" path="res://MiniGames/PianoTile/EndHUD.tscn" id="5_8hmmm"]
+[ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="6_7dmpb"]
 
 [node name="PianoTile" type="Node"]
 script = ExtResource("1_yf4rd")
@@ -27,6 +28,7 @@ offset_left = 128.0
 offset_top = 192.0
 offset_right = 192.0
 offset_bottom = 256.0
+theme_override_fonts/font = ExtResource("6_7dmpb")
 theme_override_font_sizes/font_size = 32
 text = "0"
 horizontal_alignment = 1

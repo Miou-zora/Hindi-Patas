@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bjb3dx2x4bocm"]
+[gd_scene load_steps=19 format=3 uid="uid://bjb3dx2x4bocm"]
 
 [ext_resource type="PackedScene" uid="uid://w7m6tehvvy3g" path="res://Scenes/Prefabs/player.tscn" id="2_lpo2y"]
 [ext_resource type="PackedScene" uid="uid://bfmh3fm2de78o" path="res://Scenes/Prefabs/Coin.tscn" id="3_nht2m"]
@@ -6,11 +6,13 @@
 [ext_resource type="Texture2D" uid="uid://jaegp53ccc7w" path="res://Assets/Spritesheet/platformPack_tilesheet.png" id="5_8107p"]
 [ext_resource type="Script" path="res://Scripts/GameUI.gd" id="6_um0jo"]
 [ext_resource type="Texture2D" uid="uid://clreg520jah1j" path="res://Assets/platformPack_item008.png" id="7_ns8o6"]
-[ext_resource type="PackedScene" uid="uid://bw4nguj14uvhq" path="res://pinky2.tscn" id="8_7kp17"]
+[ext_resource type="PackedScene" path="res://pinky2.tscn" id="8_7kp17"]
 [ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="8_doswy"]
 [ext_resource type="PackedScene" uid="uid://d4b0sljvq8fgj" path="res://spikes.tscn" id="8_vule2"]
-[ext_resource type="PackedScene" uid="uid://di15nc7mn6dhs" path="res://Scenes/Prefabs/parallax_background.tscn" id="9_6xyn1"]
-[ext_resource type="PackedScene" uid="uid://mhnqethh5ec" path="res://Scenes/Prefabs/Letter.tscn" id="9_afk5y"]
+[ext_resource type="PackedScene" path="res://Scenes/Prefabs/parallax_background.tscn" id="9_6xyn1"]
+[ext_resource type="PackedScene" path="res://Scenes/Prefabs/Letter.tscn" id="9_afk5y"]
+[ext_resource type="PackedScene" uid="uid://cyti38f0lagf2" path="res://Scenes/Prefabs/LevelFinishDoor.tscn" id="12_3pwga"]
+[ext_resource type="PackedScene" uid="uid://bdpwijvmpsmd7" path="res://MiniGames/PianoTile/PianoTile.tscn" id="13_8o7au"]
 
 [sub_resource type="GDScript" id="GDScript_ef81o"]
 script/source = "extends Node2D
@@ -228,7 +230,13 @@ position = Vector2(479, 433)
 position = Vector2(1116, -301)
 
 [node name="spikes" parent="." instance=ExtResource("8_vule2")]
+position = Vector2(0, -10)
 rotation = -6.22035
 motion_mode = 1
 
 [node name="ParallaxBackground" parent="spikes" instance=ExtResource("9_6xyn1")]
+
+[node name="LevelFinishDoorPianoTile" parent="." instance=ExtResource("12_3pwga")]
+z_index = 1
+position = Vector2(5446, 400)
+next_scene = ExtResource("13_8o7au")

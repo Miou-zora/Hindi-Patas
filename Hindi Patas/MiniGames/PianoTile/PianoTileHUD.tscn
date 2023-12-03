@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://ktovoxuw48pd"]
+[gd_scene load_steps=3 format=3 uid="uid://ktovoxuw48pd"]
 
 [ext_resource type="Script" path="res://MiniGames/PianoTile/PianoTileHUD.gd" id="1_g3cci"]
+[ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="2_qsfu8"]
 
 [node name="PianoTileHUD" type="CanvasLayer"]
 script = ExtResource("1_g3cci")
@@ -13,6 +14,7 @@ offset_left = -150.0
 offset_right = 150.0
 offset_bottom = 277.0
 grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_qsfu8")
 theme_override_font_sizes/font_size = 64
 text = "Piano Tile"
 horizontal_alignment = 1
@@ -30,6 +32,7 @@ offset_right = 79.0
 offset_bottom = 48.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_qsfu8")
 theme_override_font_sizes/font_size = 64
 text = "Start"
 
